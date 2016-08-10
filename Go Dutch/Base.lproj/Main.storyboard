@@ -27,20 +27,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9z1-r2-MyB" userLabel="分帳Super Stack View">
-                                <rect key="frame" x="50" y="100" width="500" height="258"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9z1-r2-MyB" userLabel="分帳Super Stack View">
+                                <rect key="frame" x="22" y="82" width="556" height="258"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMf-0I-hhx" userLabel="總金額Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="500" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="556" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總金額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjQ-kt-SKe">
-                                                <rect key="frame" x="0.0" y="0.0" width="415" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="471" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nr5-Ve-gML" userLabel="總金額Text Field">
-                                                <rect key="frame" x="415" y="0.0" width="85" height="30"/>
+                                                <rect key="frame" x="471" y="0.0" width="85" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="d6Q-ja-IYy"/>
                                                 </constraints>
@@ -49,39 +49,25 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6GN-y0-zew" userLabel="服務費Stack View">
-                                        <rect key="frame" x="0.0" y="46" width="500" height="28"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服務費：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OC-r3-pFQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vDz-xp-FKZ">
-                                                <rect key="frame" x="200" y="0.0" width="300" height="29"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="9lA-uH-m2z"/>
-                                                </constraints>
-                                                <segments>
-                                                    <segment title="無服務費"/>
-                                                    <segment title="已含服務費"/>
-                                                    <segment title="須另加服務費"/>
-                                                </segments>
-                                            </segmentedControl>
-                                        </subviews>
-                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vDz-xp-FKZ">
+                                        <rect key="frame" x="2" y="46" width="552" height="29"/>
+                                        <segments>
+                                            <segment title="無服務費"/>
+                                            <segment title="已含服務費"/>
+                                            <segment title="須另加服務費"/>
+                                        </segments>
+                                    </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7e-UW-zI0" userLabel="總人數Stack View">
-                                        <rect key="frame" x="0.0" y="90" width="500" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="556" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總人數：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewh-ji-SVx">
-                                                <rect key="frame" x="0.0" y="0.0" width="415" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="471" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSM-Dr-kuY" userLabel="總人數Text Field">
-                                                <rect key="frame" x="415" y="0.0" width="85" height="30"/>
+                                                <rect key="frame" x="471" y="0.0" width="85" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="Y83-hf-2Cm"/>
                                                 </constraints>
@@ -90,17 +76,17 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDV-tz-fOl" userLabel="公基金Stack View">
-                                        <rect key="frame" x="0.0" y="136" width="500" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDV-tz-fOl" userLabel="公費Stack View">
+                                        <rect key="frame" x="0.0" y="136" width="556" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公基金：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZi-id-mJg" userLabel="公基金：">
-                                                <rect key="frame" x="0.0" y="0.0" width="415" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公費：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZi-id-mJg">
+                                                <rect key="frame" x="0.0" y="0.0" width="471" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ps2-Ym-j50" userLabel="公基金 Text Field">
-                                                <rect key="frame" x="415" y="0.0" width="85" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ps2-Ym-j50" userLabel="公費 Text Field">
+                                                <rect key="frame" x="471" y="0.0" width="85" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="shm-pA-uxJ"/>
                                                 </constraints>
@@ -110,16 +96,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdG-p3-5zi" userLabel="我的金額Stack View">
-                                        <rect key="frame" x="0.0" y="182" width="500" height="30"/>
+                                        <rect key="frame" x="0.0" y="182" width="556" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的金額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5Y-0Z-hVe">
-                                                <rect key="frame" x="0.0" y="0.0" width="415" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="471" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="486-Yo-GkL" userLabel="我的金額Text Field">
-                                                <rect key="frame" x="415" y="0.0" width="85" height="30"/>
+                                                <rect key="frame" x="471" y="0.0" width="85" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="BJZ-YA-mYI"/>
                                                 </constraints>
@@ -129,7 +115,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4P-jE-Msk">
-                                        <rect key="frame" x="0.0" y="228" width="500" height="30"/>
+                                        <rect key="frame" x="0.0" y="228" width="556" height="30"/>
                                         <state key="normal" title="計算"/>
                                         <connections>
                                             <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJA-C9-poc"/>
@@ -137,27 +123,79 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="vDz-xp-FKZ" secondAttribute="trailing" constant="2" id="125-xT-T9i"/>
                                     <constraint firstItem="oDV-tz-fOl" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="EN8-LM-dW5"/>
                                     <constraint firstItem="MdG-p3-5zi" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="LgT-au-56D"/>
-                                    <constraint firstItem="6GN-y0-zew" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="MGF-Cj-Zkf"/>
                                     <constraint firstItem="L7e-UW-zI0" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="NV3-j9-Yqk"/>
+                                    <constraint firstItem="vDz-xp-FKZ" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leadingMargin" constant="2" id="QmU-q8-NYg"/>
                                     <constraint firstItem="uMf-0I-hhx" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="Sli-lR-R1u"/>
                                     <constraint firstItem="j4P-jE-Msk" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="Z01-VB-rry"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="單點數：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53n-6N-cQK">
+                                <rect key="frame" x="106" y="363" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="顯示＃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-wd-Etw">
+                                <rect key="frame" x="223" y="363" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="z8y-0R-faa">
+                                <rect key="frame" x="293" y="359" width="118" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="＃數量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAw-04-yNp">
+                                <rect key="frame" x="436" y="452" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的單點：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82g-Ka-nDX">
+                                <rect key="frame" x="413" y="543" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uh-jy-iio">
+                                <rect key="frame" x="22" y="363" width="63" height="30"/>
+                                <state key="normal" title="確認"/>
+                                <connections>
+                                    <action selector="addpleasework:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tc2-Bl-Pds"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please WORK!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x28-xw-rlj">
+                                <rect key="frame" x="10" y="422" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-G4-bHI">
+                                <rect key="frame" x="495" y="448" width="94" height="29"/>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFq-6o-5nS">
+                                <rect key="frame" x="123" y="477" width="75" height="30"/>
+                                <state key="normal" title="返回主頁面"/>
+                                <connections>
+                                    <action selector="addaddadd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Zg-ds-7we"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UKx-ZC-lQU" secondAttribute="trailing" id="77N-Nu-0kn"/>
                             <constraint firstItem="UKx-ZC-lQU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MdV-YI-0zN"/>
-                            <constraint firstItem="9z1-r2-MyB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="NWm-xv-TTd"/>
                             <constraint firstItem="9z1-r2-MyB" firstAttribute="top" secondItem="UKx-ZC-lQU" secondAttribute="bottom" constant="20" id="VrW-vb-u5u"/>
-                            <constraint firstAttribute="trailing" secondItem="9z1-r2-MyB" secondAttribute="trailing" constant="50" id="YRU-3y-Ulu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9z1-r2-MyB" secondAttribute="trailing" constant="2" id="YVo-8y-eSJ"/>
                             <constraint firstItem="UKx-ZC-lQU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="dLy-fr-yDd"/>
+                            <constraint firstItem="9z1-r2-MyB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="smg-0z-JoO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="billAmountField" destination="nr5-Ve-gML" id="hwL-c7-Pyu"/>
+                        <outlet property="messageLabel" destination="x28-xw-rlj" id="DL3-gB-wUU"/>
                         <outlet property="myMoneyField" destination="486-Yo-GkL" id="Ubd-zA-n6d"/>
                         <outlet property="peopleAmountField" destination="LSM-Dr-kuY" id="avh-gH-by4"/>
                         <outlet property="publicAmountField" destination="ps2-Ym-j50" id="gKw-pe-djH"/>
@@ -167,6 +205,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qun-Q7-U0E">
+            <objects>
+                <viewController id="1Rb-ca-mMa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFh-mQ-k4V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh3-U0-yuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

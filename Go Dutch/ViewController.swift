@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var peopleAmountField: UITextField!
     @IBOutlet weak var publicAmountField: UITextField!
     @IBOutlet weak var myMoneyField: UITextField!
+    @IBOutlet weak var messageLabel: UILabel!
     
     func setInitialValue() {
         publicAmountField.text = "0"
@@ -36,6 +37,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    
+    @IBAction func addpleasework(sender: UIButton) {
+        messageLabel.hidden = false
+    }
+    
+
+    @IBAction func addaddadd(sender: UIButton) {
+        messageLabel.hidden = true
+    }
+    
+    
+    
+    
+    
+    
     
     @IBAction func calculate(sender: AnyObject) {
         if let billAmount = Double(billAmountField.text!) {
@@ -60,11 +78,7 @@ class ViewController: UIViewController {
                 
                 myMoneyField.text = ""
                 
-                    
-                
-                
-               // let publicRealMoney = Double(publicAmountField.text!)!
-                
+
                 let roundedBillAmount = round(100*billAmount)/100
                 let serviceChargeAmount = roundedBillAmount * serviceChargeOrNot
                 let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney)/peopleAmount
@@ -76,8 +90,8 @@ class ViewController: UIViewController {
                 }
                 myMoneyField.text = String(format: "%.2f", myRealAmount)
                 }
-                }
             }
+        }
 
     }
     
