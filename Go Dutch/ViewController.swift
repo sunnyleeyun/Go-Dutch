@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var peopleAmountField: UITextField!
     @IBOutlet weak var publicAmountField: UITextField!
     @IBOutlet weak var myMoneyField: UITextField!
-    @IBOutlet weak var messageLabel: UILabel!
+
     
     func setInitialValue() {
         publicAmountField.text = "0"
@@ -39,15 +39,6 @@ class ViewController: UIViewController {
     }
     
 
-    
-    @IBAction func addpleasework(sender: UIButton) {
-        messageLabel.hidden = false
-    }
-    
-
-    @IBAction func addaddadd(sender: UIButton) {
-        messageLabel.hidden = true
-    }
     
     
     
