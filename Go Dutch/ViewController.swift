@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var peopleAmountField: UITextField!
     @IBOutlet weak var publicAmountField: UITextField!
     @IBOutlet weak var myMoneyField: UITextField!
+    
+    
 
     
     func setInitialValue() {
@@ -85,5 +87,8 @@ class ViewController: UIViewController {
         }
 
     }
+    
+}
+class SecondViewController: UIViewController {
     
 }

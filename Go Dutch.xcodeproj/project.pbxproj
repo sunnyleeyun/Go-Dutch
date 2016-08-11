@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB3D21E1D5C2C5A0029B937 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D21D1D5C2C5A0029B937 /* secondViewController.swift */; };
 		9BE7D5F21D58378000A8A08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7D5F11D58378000A8A08C /* AppDelegate.swift */; };
 		9BE7D5F41D58378000A8A08C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7D5F31D58378000A8A08C /* ViewController.swift */; };
 		9BE7D5F71D58378000A8A08C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE7D5F51D58378000A8A08C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BB3D21D1D5C2C5A0029B937 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		9BE7D5EE1D58377F00A8A08C /* Go Dutch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Dutch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE7D5F11D58378000A8A08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE7D5F31D58378000A8A08C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				9BE7D5F11D58378000A8A08C /* AppDelegate.swift */,
 				9BE7D5F31D58378000A8A08C /* ViewController.swift */,
 				9BE7D5F51D58378000A8A08C /* Main.storyboard */,
+				9BB3D21D1D5C2C5A0029B937 /* secondViewController.swift */,
 				9BE7D5F81D58378000A8A08C /* Assets.xcassets */,
 				9BE7D5FA1D58378000A8A08C /* LaunchScreen.storyboard */,
 				9BE7D5FD1D58378000A8A08C /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE7D5F41D58378000A8A08C /* ViewController.swift in Sources */,
+				9BB3D21E1D5C2C5A0029B937 /* secondViewController.swift in Sources */,
 				9BE7D5F21D58378000A8A08C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				9BE7D6021D58378000A8A08C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
