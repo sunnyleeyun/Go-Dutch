@@ -10,7 +10,6 @@ import UIKit
 
 class secondViewController: UIViewController {
 
-    @IBOutlet weak var labeltest: UILabel!
     
     @IBOutlet weak var num1: UILabel!
     @IBOutlet weak var num2: UILabel!
@@ -25,8 +24,18 @@ class secondViewController: UIViewController {
     @IBOutlet weak var num11: UILabel!
     @IBOutlet weak var num12: UILabel!
     
-    
-    
+    @IBOutlet weak var stack1: UIStackView!
+    @IBOutlet weak var stack2: UIStackView!
+    @IBOutlet weak var stack3: UIStackView!
+    @IBOutlet weak var stack4: UIStackView!
+    @IBOutlet weak var stack5: UIStackView!
+    @IBOutlet weak var stack6: UIStackView!
+    @IBOutlet weak var stack7: UIStackView!
+    @IBOutlet weak var stack8: UIStackView!
+    @IBOutlet weak var stack9: UIStackView!
+    @IBOutlet weak var stack10: UIStackView!
+    @IBOutlet weak var stack11: UIStackView!
+    @IBOutlet weak var stack12: UIStackView!
     
     
     
@@ -42,12 +51,16 @@ class secondViewController: UIViewController {
     }
     
     
-    @IBAction func stepperstest(sender: UIStepper) {
-        self.labeltest.text = String(Int(sender.value))
-        
-    }
+//    var numberOfALaCarte: [Int: Stack]
+//    
+//    func updateBySteppers(){
+//        if 
+//    }
     
     
+    
+    
+    //steppers
     @IBAction func stepper1(sender: UIStepper) {
         self.num1.text = String(Int(sender.value))
     }

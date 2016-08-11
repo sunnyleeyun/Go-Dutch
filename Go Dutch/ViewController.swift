@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var peopleAmountField: UITextField!
     @IBOutlet weak var publicAmountField: UITextField!
     @IBOutlet weak var myMoneyField: UITextField!
+    @IBOutlet weak var sliderALaCarte: UISlider!
+    @IBOutlet weak var numerOfSlider: UILabel!
     
     
 
@@ -43,6 +45,11 @@ class ViewController: UIViewController {
 
     
     
+    @IBAction func valueChanged(sender: AnyObject) {
+        var currentValue = Int(sliderALaCarte.value)
+        numerOfSlider.text = "\(currentValue)"
+        
+    }
     
     
     
@@ -70,6 +77,8 @@ class ViewController: UIViewController {
                 }
                 
                 myMoneyField.text = ""
+                    
+                
                 
 
                 let roundedBillAmount = round(100*billAmount)/100
@@ -89,6 +98,4 @@ class ViewController: UIViewController {
     }
     
 }
-class SecondViewController: UIViewController {
-    
-}
+
