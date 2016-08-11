@@ -15,10 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var publicAmountField: UITextField!
     @IBOutlet weak var myMoneyField: UITextField!
     @IBOutlet weak var sliderALaCarte: UISlider!
-    @IBOutlet weak var numerOfSlider: UILabel!
+    @IBOutlet weak var numberOfSlider: UILabel!
+  
     
+    //test hide button
     
-
+    @IBOutlet weak var testhide: UILabel!
+    @IBAction func hide(sender: UIButton) {
+        self.testhide.hidden = true
+    }
+    
+    //
     
     func setInitialValue() {
         publicAmountField.text = "0"
@@ -42,12 +49,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var DestViewController : secondViewController = segue.destinationViewController as! secondViewController
+        DestViewController.LabelText = numberOfSlider.text!
+    }
+    
+    
 
     
     
     @IBAction func valueChanged(sender: AnyObject) {
         var currentValue = Int(sliderALaCarte.value)
-        numerOfSlider.text = "\(currentValue)"
+        numberOfSlider.text = "\(currentValue)"
         
     }
     

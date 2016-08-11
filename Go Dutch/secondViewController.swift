@@ -37,10 +37,20 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack11: UIStackView!
     @IBOutlet weak var stack12: UIStackView!
     
+    @IBOutlet weak var labeltest: UILabel!
+    var LabelText = String()
     
+    //tests
+    @IBAction func hidestack1(sender: UIButton) {
+        usingDictionary()
+    }
+    //tests
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //
+        labeltest.text = LabelText
+        //
 
         // Do any additional setup after loading the view.
     }
@@ -51,19 +61,23 @@ class secondViewController: UIViewController {
     }
     
     
-//    var numberOfALaCarte: [Int: Stack]
-//    
-//    func updateBySteppers(){
-//        if 
-//    }
+    func usingDictionary(){
+        var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10, 11: stack11, 12: stack12]
+        if let counter = Int(LabelText){ //viewcontroller多少就多少
+            for index in 1...12{//因為diction有12個
+                if let stackIndex = diction[index]{//stack[index] = stack[1~12]
+                    if counter < index {
+                        stackIndex.hidden = true
+                    }
+                }
+            }
+        }
+    }
     
-    
-    
-    
-    //steppers
+     //steppers
     @IBAction func stepper1(sender: UIStepper) {
         self.num1.text = String(Int(sender.value))
-    }
+     }
     
     @IBAction func stepper2(sender: UIStepper) {
         self.num2.text = String(Int(sender.value))
