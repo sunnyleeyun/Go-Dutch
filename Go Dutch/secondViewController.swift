@@ -36,18 +36,19 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack10: UIStackView!
     @IBOutlet weak var stack11: UIStackView!
     @IBOutlet weak var stack12: UIStackView!
-    
+    ////
     @IBOutlet weak var labeltest: UILabel!
     var LabelText = String()
     
-    //tests
-    @IBAction func hidestack1(sender: UIButton) {
+    @IBAction func hideStacks(sender: UIButton) {
         usingDictionary()
     }
-    //tests
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usingDictionary()
         //
         labeltest.text = LabelText
         //
@@ -60,7 +61,41 @@ class secondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //////////
     
+    
+    @IBOutlet weak var xxyy: UIStackView!
+    
+    @IBOutlet weak var xx: UITextField!
+    
+    @IBOutlet weak var yy: UITextField!
+  
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var DestViewController : ViewController = segue.destinationViewController as! ViewController
+            DestViewController.labeltestcatch = xx.text!
+    }
+
+   /////////
+    
+    
+    
+   /*
+    @IBAction func moveData(sender: UIButton) {
+        var moveDatas = [1: num1, 2: num2, 3: num3, 4: num4, 5: num5, 6: num6, 7: num7, 8: num8, 9: num9, 10: num10, 11: num11, 12: num12]
+        
+        
+    }
+    
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var DestViewController : ViewController = segue.destinationViewController as! ViewController
+        DestViewController.LabelText = numberOfSlider.text!
+    }
+    
+*/
     func usingDictionary(){
         var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10, 11: stack11, 12: stack12]
         if let counter = Int(LabelText){ //viewcontroller多少就多少
@@ -73,57 +108,8 @@ class secondViewController: UIViewController {
             }
         }
     }
-    
-     //steppers
-    @IBAction func stepper1(sender: UIStepper) {
-        self.num1.text = String(Int(sender.value))
-     }
-    
-    @IBAction func stepper2(sender: UIStepper) {
-        self.num2.text = String(Int(sender.value))
-    }
-    
-    @IBAction func stepper3(sender: UIStepper) {
-        self.num3.text = String(Int(sender.value))
-    }
-    
-    @IBAction func stepper4(sender: UIStepper) {
-        self.num4.text = String(Int(sender.value))
-    }
-    
-    @IBAction func stepper5(sender: UIStepper) {
-        self.num5.text = String(Int(sender.value))
-    }
-    
-    @IBAction func stepper6(sender: UIStepper) {
-        self.num6.text = String(Int(sender.value))
-    }
 
-    @IBAction func stepper7(sender: UIStepper) {
-        self.num7.text = String(Int(sender.value))
-    }
     
-    @IBAction func stepper8(sender: UIStepper) {
-        self.num8.text = String(Int(sender.value))
-    }
-    
-    @IBAction func stepper9(sender: UIStepper) {
-        self.num9.text = String(Int(sender.value))
-    }
-    
-    @IBAction func stepper10(sender: UIStepper) {
-        self.num10.text = String(Int(sender.value))
-    }
-    
-    
-    @IBAction func stepper11(sender: UIStepper) {
-        self.num11.text = String(Int(sender.value))
-    }
-    
-    
-    @IBAction func stepper12(sender: UIStepper) {
-        self.num12.text = String(Int(sender.value))
-    }
     
     
     

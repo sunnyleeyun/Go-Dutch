@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var billAmountField: UITextField!
     @IBOutlet weak var serviceChargeField: UISegmentedControl!
@@ -17,15 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderALaCarte: UISlider!
     @IBOutlet weak var numberOfSlider: UILabel!
   
-    
-    //test hide button
-    
-    @IBOutlet weak var testhide: UILabel!
-    @IBAction func hide(sender: UIButton) {
-        self.testhide.hidden = true
-    }
-    
-    //
+    @IBOutlet weak var testcatch: UILabel!
+    var labeltestcatch = String()
     
     func setInitialValue() {
         publicAmountField.text = "0"
@@ -34,12 +30,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         setInitialValue()
         
+    
+        testcatch.text = labeltestcatch
         
-        
+
         // Do any additional setup after loading the view, typically from a nib
         
     }
@@ -48,6 +44,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : secondViewController = segue.destinationViewController as! secondViewController
@@ -61,7 +58,6 @@ class ViewController: UIViewController {
     @IBAction func valueChanged(sender: AnyObject) {
         var currentValue = Int(sliderALaCarte.value)
         numberOfSlider.text = "\(currentValue)"
-        
     }
     
     
