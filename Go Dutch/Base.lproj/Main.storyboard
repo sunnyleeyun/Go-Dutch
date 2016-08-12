@@ -298,7 +298,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGJ-Mv-wBI">
                                                 <rect key="frame" x="15" y="0.0" width="214" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-0b-fiB">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-0b-fiB">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="cJE-vc-Yok"/>
@@ -307,7 +307,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-uQ-s31">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-uQ-s31">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="wy8-cC-4DE"/>
@@ -356,7 +356,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX7-Oe-1lf">
                                                 <rect key="frame" x="15" y="0.0" width="214" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-QL-HTz">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-QL-HTz">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="Tzt-hh-1IG"/>
@@ -365,7 +365,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opb-1M-Dci">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opb-1M-Dci">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="2tW-Gb-d5d"/>
@@ -414,7 +414,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3v-SQ-7fT">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOd-0J-DFW">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOd-0J-DFW">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="nXz-2e-Mef"/>
@@ -423,7 +423,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-lF-Sy4">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-lF-Sy4">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="Mio-BE-s6b"/>
@@ -472,7 +472,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abV-56-jIP">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-vx-ldD">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-vx-ldD">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="GJm-mg-ex6"/>
@@ -481,7 +481,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k52-ks-n7C">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k52-ks-n7C">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="cCx-V2-o3J"/>
@@ -530,7 +530,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhL-Jb-VSj">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrE-jV-iCu">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrE-jV-iCu">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="MB6-CW-Kul"/>
@@ -539,7 +539,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdA-ik-9fz">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdA-ik-9fz">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="IhC-rQ-fuq"/>
@@ -949,7 +949,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-NW-Ino">
-                                <rect key="frame" x="83" y="510" width="85" height="21"/>
+                                <rect key="frame" x="105" y="510" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -964,12 +964,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-eK-blC">
-                                <rect key="frame" x="29" y="537" width="60" height="30"/>
+                                <rect key="frame" x="28" y="506" width="60" height="30"/>
                                 <state key="normal" title="計算總額"/>
                                 <connections>
                                     <action selector="addition:" destination="tk1-X1-N1F" eventType="touchUpInside" id="kEv-0s-tnl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的總額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-oE-0GF">
+                                <rect key="frame" x="105" y="539" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="並勾選自己的單點" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nX-As-I4L">
+                                <rect key="frame" x="11" y="75" width="104" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTC-2x-GcV">
+                                <rect key="frame" x="207" y="539" width="11" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="tMo-ad-ET7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -987,6 +1008,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="check1" destination="irj-gy-fLz" id="ESS-JU-SkJ"/>
+                        <outlet property="check10" destination="n1o-1c-hci" id="vaU-ks-0pq"/>
+                        <outlet property="check11" destination="ryU-HK-mLh" id="mXa-Vq-4yA"/>
+                        <outlet property="check12" destination="YG3-bR-w6J" id="DpU-Qg-l3H"/>
+                        <outlet property="check2" destination="RbH-xT-9ej" id="ahA-b6-v8R"/>
+                        <outlet property="check3" destination="6ep-bA-8iU" id="72K-KZ-G43"/>
+                        <outlet property="check4" destination="K8O-zk-uEH" id="t4g-z0-pTz"/>
+                        <outlet property="check5" destination="mec-4c-Oun" id="QHn-4A-NKy"/>
+                        <outlet property="check6" destination="tAn-fP-SM4" id="GcX-0M-G8K"/>
+                        <outlet property="check7" destination="n8Z-Uw-zUJ" id="1Xv-Ce-6oZ"/>
+                        <outlet property="check8" destination="ZbZ-iY-65N" id="8OA-nn-xFo"/>
+                        <outlet property="check9" destination="n4D-m4-usG" id="PhY-f0-vRd"/>
                         <outlet property="labeltest" destination="Ce0-g0-iVI" id="Nfa-jJ-SHY"/>
                         <outlet property="money1" destination="RRX-hv-hCZ" id="Kg7-5M-1VX"/>
                         <outlet property="money10" destination="lqd-I6-8Io" id="tpy-NU-7Wz"/>
@@ -1001,7 +1034,17 @@
                         <outlet property="money8" destination="gSf-AQ-YvO" id="8kI-56-imA"/>
                         <outlet property="money9" destination="P7u-SD-ufY" id="0c7-lf-dpz"/>
                         <outlet property="number1" destination="UlN-4o-hiB" id="aie-VY-yiJ"/>
+                        <outlet property="number10" destination="tgp-mZ-MjH" id="CrK-pz-s70"/>
+                        <outlet property="number11" destination="qMI-wZ-I1B" id="GtM-tM-EAu"/>
+                        <outlet property="number12" destination="aLd-2m-AbL" id="ZFp-jC-e7d"/>
+                        <outlet property="number2" destination="9Ij-bi-KHB" id="lUo-OR-Xz2"/>
                         <outlet property="number3" destination="3Fz-mP-8yj" id="J6f-ZT-jCC"/>
+                        <outlet property="number4" destination="fp9-Zt-qNO" id="OjT-NI-svD"/>
+                        <outlet property="number5" destination="CkJ-NT-cOD" id="1fF-qI-BhD"/>
+                        <outlet property="number6" destination="l8l-Zc-Wbh" id="L6A-Fv-vRq"/>
+                        <outlet property="number7" destination="KCa-5c-e2b" id="8TO-La-goI"/>
+                        <outlet property="number8" destination="zjk-1b-lHg" id="FC4-KV-zmh"/>
+                        <outlet property="number9" destination="fhE-ix-1Rx" id="kEM-JL-9Wt"/>
                         <outlet property="stack1" destination="Zpj-VP-7rZ" id="Ty6-Js-5H7"/>
                         <outlet property="stack10" destination="S4z-Nc-Vcn" id="MNF-Ch-jAg"/>
                         <outlet property="stack11" destination="QOj-pt-Dg3" id="f4p-Kp-RYE"/>

@@ -53,6 +53,25 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack11: UIStackView!
     @IBOutlet weak var stack12: UIStackView!
     ////
+    
+    
+  //  @IBOutlet weak var check1: CheckBox!
+    @IBOutlet weak var check1: CheckBox!
+    @IBOutlet weak var check2: CheckBox!
+    @IBOutlet weak var check3: CheckBox!
+    @IBOutlet weak var check4: CheckBox!
+    @IBOutlet weak var check5: CheckBox!
+    @IBOutlet weak var check6: CheckBox!
+    @IBOutlet weak var check7: CheckBox!
+    @IBOutlet weak var check8: CheckBox!
+    @IBOutlet weak var check9: CheckBox!
+    @IBOutlet weak var check10: CheckBox!
+    @IBOutlet weak var check11: CheckBox!
+    @IBOutlet weak var check12: CheckBox!
+    
+    
+    
+    
     @IBOutlet weak var labeltest: UILabel!
     var LabelText = String()
     
@@ -110,14 +129,19 @@ class secondViewController: UIViewController {
     @IBAction func addition(sender: UIButton) {
         var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10, 11: money11, 12: money12]
         var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10, 11: number11, 12: number12]
-        
+        var totalDiction3 = [1: check1, 2: check2, 3: check3, 4: check4, 5: check5, 6: check6, 7: check7, 8: check8, 9: check9, 10: number10, 11: check11, 12: check12]
         
         if let counter = Int(LabelText){
             for iindex in 1...12 {
                 if let iindex1 = Int(totalDiction1[iindex]!.text!){
                     if let iindex2 = Int(totalDiction2[iindex]!.text!){
                         var test = iindex1 * iindex2
-                     totaltotal.text = (String)(test)
+                        //if (check1.isChecked == true)
+                       // {
+                           // totaltotal.text = (String)(test)
+                           // mytotal.text
+                       // }
+
                     }
                 }
             }
@@ -165,6 +189,10 @@ class CheckBox: UIButton {
         didSet{
             if isChecked == true {
                 self.setImage(checkedImage, forState: .Normal)
+                
+                
+                
+                
             } else {
                 self.setImage(uncheckedImage, forState: .Normal)
             }

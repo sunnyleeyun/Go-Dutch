@@ -22,6 +22,7 @@ class ViewController: UIViewController {
   
     func setInitialValue() {
         publicAmountField.text = "0"
+        numberOfSlider.text = "0"
     }
     
     
