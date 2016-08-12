@@ -20,22 +20,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderALaCarte: UISlider!
     @IBOutlet weak var numberOfSlider: UILabel!
   
-    @IBOutlet weak var testcatch: UILabel!
-    var labeltestcatch = String()
-    
     func setInitialValue() {
         publicAmountField.text = "0"
     }
     
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setInitialValue()
         
     
-        testcatch.text = labeltestcatch
-        
-
         // Do any additional setup after loading the view, typically from a nib
         
     }
@@ -107,4 +102,5 @@ class ViewController: UIViewController {
     }
     
 }
+
 

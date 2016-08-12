@@ -9,20 +9,36 @@
 import UIKit
 
 class secondViewController: UIViewController {
-
     
-    @IBOutlet weak var num1: UILabel!
-    @IBOutlet weak var num2: UILabel!
-    @IBOutlet weak var num3: UILabel!
-    @IBOutlet weak var num4: UILabel!
-    @IBOutlet weak var num5: UILabel!
-    @IBOutlet weak var num6: UILabel!
-    @IBOutlet weak var num7: UILabel!
-    @IBOutlet weak var num8: UILabel!
-    @IBOutlet weak var num9: UILabel!
-    @IBOutlet weak var num10: UILabel!
-    @IBOutlet weak var num11: UILabel!
-    @IBOutlet weak var num12: UILabel!
+    @IBOutlet weak var money1: UITextField!
+    @IBOutlet weak var money2: UITextField!
+    @IBOutlet weak var money3: UITextField!
+    @IBOutlet weak var money4: UITextField!
+    @IBOutlet weak var money5: UITextField!
+    @IBOutlet weak var money6: UITextField!
+    @IBOutlet weak var money7: UITextField!
+    @IBOutlet weak var money8: UITextField!
+    @IBOutlet weak var money9: UITextField!
+    @IBOutlet weak var money10: UITextField!
+    @IBOutlet weak var money11: UITextField!
+    @IBOutlet weak var money12: UITextField!
+    
+    
+    @IBOutlet weak var number1: UITextField!
+    @IBOutlet weak var number2: UITextField!
+    @IBOutlet weak var number3: UITextField!
+    @IBOutlet weak var number4: UITextField!
+    @IBOutlet weak var number5: UITextField!
+    @IBOutlet weak var number6: UITextField!
+    @IBOutlet weak var number7: UITextField!
+    @IBOutlet weak var number8: UITextField!
+    @IBOutlet weak var number9: UITextField!
+    @IBOutlet weak var number10: UITextField!
+    @IBOutlet weak var number11: UITextField!
+    @IBOutlet weak var number12: UITextField!
+    
+    
+    
     
     @IBOutlet weak var stack1: UIStackView!
     @IBOutlet weak var stack2: UIStackView!
@@ -40,9 +56,8 @@ class secondViewController: UIViewController {
     @IBOutlet weak var labeltest: UILabel!
     var LabelText = String()
     
-    @IBAction func hideStacks(sender: UIButton) {
-        usingDictionary()
-    }
+    
+    @IBOutlet weak var totaltotal: UILabel!
     
     
     override func viewDidLoad() {
@@ -64,17 +79,10 @@ class secondViewController: UIViewController {
     //////////
     
     
-    @IBOutlet weak var xxyy: UIStackView!
-    
-    @IBOutlet weak var xx: UITextField!
-    
-    @IBOutlet weak var yy: UITextField!
-  
-    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : ViewController = segue.destinationViewController as! ViewController
-            DestViewController.labeltestcatch = xx.text!
+        
     }
 
    /////////
@@ -96,6 +104,27 @@ class secondViewController: UIViewController {
     }
     
 */
+    
+   
+    
+    @IBAction func addition(sender: UIButton) {
+        var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10, 11: money11, 12: money12]
+        var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10, 11: number11, 12: number12]
+        
+        
+        if let counter = Int(LabelText){
+            for iindex in 1...12 {
+                if let iindex1 = Int(totalDiction1[iindex]!.text!){
+                    if let iindex2 = Int(totalDiction2[iindex]!.text!){
+                        var test = iindex1 * iindex2
+                     totaltotal.text = (String)(test)
+                    }
+                }
+            }
+        }
+        
+    }
+    
     func usingDictionary(){
         var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10, 11: stack11, 12: stack12]
         if let counter = Int(LabelText){ //viewcontroller多少就多少
@@ -125,3 +154,32 @@ class secondViewController: UIViewController {
     */
 
 }
+
+class CheckBox: UIButton {
+    // Images
+    let checkedImage = UIImage(named: "checkbox")! as UIImage
+    let uncheckedImage = UIImage(named: "emptycheckbox")! as UIImage
+    
+    // Bool property
+    var isChecked: Bool = false {
+        didSet{
+            if isChecked == true {
+                self.setImage(checkedImage, forState: .Normal)
+            } else {
+                self.setImage(uncheckedImage, forState: .Normal)
+            }
+        }
+    }
+    
+    override func awakeFromNib() {
+        self.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.isChecked = false
+    }
+    
+    func buttonClicked(sender: UIButton) {
+        if sender == self {
+            isChecked = !isChecked
+        }
+    }
+}
+
