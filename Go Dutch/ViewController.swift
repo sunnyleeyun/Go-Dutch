@@ -19,33 +19,47 @@ class ViewController: UIViewController {
     @IBOutlet weak var myMoneyField: UITextField!
     @IBOutlet weak var sliderALaCarte: UISlider!
     @IBOutlet weak var numberOfSlider: UILabel!
-  
+    var textNumberOfSlider = String()
+    
+    @IBOutlet weak var confirmButton: UIButton!
     
     
-    @IBOutlet weak var totalofalacarte: UILabel!
-    var totalOfALaCarte = String()
     
+    @IBOutlet weak var sumOfTotalALa: UITextField!
+    var textSumOfTotalALa = String()
     
-    @IBOutlet weak var totalofallalalala: UILabel!
-    var totalOfAllALALALA = String()
+    @IBOutlet weak var myALa: UITextField!
+    var textMyALa = String()
     
     
     func setInitialValue() {
         publicAmountField.text = "0"
+        
         numberOfSlider.text = "0"
-       // Int(totalofalacarte) = 0
-       // Int(totalofallalalala) = 0
+        if numberOfSlider.text == "0" {
+            sumOfTotalALa.text = "0"
+            myALa.text = "0"
+        } else {
+            sumOfTotalALa.text = textSumOfTotalALa
+            myALa.text = textMyALa
+        }
         
     }
     
     
 
     override func viewDidLoad() {
-        super.viewDidLoad()
         setInitialValue()
-        totalofalacarte.text = totalOfALaCarte
-        totalofallalalala.text = totalOfAllALALALA
-    
+
+        super.viewDidLoad()
+        
+     
+        numberOfSlider.text = textNumberOfSlider
+        
+        
+      
+        
+     
         // Do any additional setup after loading the view, typically from a nib
         
     }
@@ -81,12 +95,13 @@ class ViewController: UIViewController {
                 
                 if let publicRealMoney = Double(publicAmountField.text!){
                     
-                    if let totalALA = Double(totalofalacarte.text!){
+                    if let totalALA = Double(sumOfTotalALa.text!){
                         
-                        if let totaltotal = Double(totalofallalalala.text!){
+                        if let totaltotal = Double(myALa.text!){
                     
                 //calculate
                 var serviceChargeOrNot = 0.0
+                            
                 
                 switch serviceChargeField.selectedSegmentIndex {
                 case 0:

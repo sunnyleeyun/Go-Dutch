@@ -52,10 +52,8 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack10: UIStackView!
     @IBOutlet weak var stack11: UIStackView!
     @IBOutlet weak var stack12: UIStackView!
-    ////
+   
     
-    
-  //  @IBOutlet weak var check1: CheckBox!
     @IBOutlet weak var check1: CheckBox!
     @IBOutlet weak var check2: CheckBox!
     @IBOutlet weak var check3: CheckBox!
@@ -104,32 +102,12 @@ class secondViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : ViewController = segue.destinationViewController as! ViewController
-        DestViewController.totalOfALaCarte = myTotal.text!
-        DestViewController.totalOfAllALALALA = totaltotal.text!
-        
+        DestViewController.textMyALa = myTotal.text!
+        DestViewController.textSumOfTotalALa = totaltotal.text!
+        DestViewController.textNumberOfSlider = labeltest.text!
     }
 
-   /////////
     
-    
-    
-   /*
-    @IBAction func moveData(sender: UIButton) {
-        var moveDatas = [1: num1, 2: num2, 3: num3, 4: num4, 5: num5, 6: num6, 7: num7, 8: num8, 9: num9, 10: num10, 11: num11, 12: num12]
-        
-        
-    }
-    
-    
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var DestViewController : ViewController = segue.destinationViewController as! ViewController
-        DestViewController.LabelText = numberOfSlider.text!
-    }
-    
-*/
-    
-   
     
     @IBAction func addition(sender: UIButton) {
         var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10, 11: money11, 12: money12]
@@ -201,27 +179,7 @@ class secondViewController: UIViewController {
                             myTest = iindex1 * iindex2
                             myTotalSum += myTest
                         }
-
-                        
-                        
-                        //check1.isChecked
-                        //totalDiction3[1]!.isChecked!
-                        //print("total is \(totalDiction3[1])")
-                        //print("totlal2 is \(check1)")
-                        /*
-                        if (totalDiction3[1]!.isChecked == true) {
-                            
-                        }
- */
- 
-
-                        //print("test is \(test), and totlasum is \(totalSum)")
-                        //if (check1.isChecked == true)
-                       // {
-
-                           // mytotal.text
-                       // }
-
+                      
                     }
                 }
             }
