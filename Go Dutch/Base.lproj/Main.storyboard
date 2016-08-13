@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分帳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-ZC-lQU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分帳通" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-ZC-lQU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="0Dr-K0-9vj"/>
@@ -27,8 +27,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9z1-r2-MyB" userLabel="分帳Super Stack View">
-                                <rect key="frame" x="22" y="82" width="556" height="304"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9z1-r2-MyB" userLabel="分帳Super Stack View">
+                                <rect key="frame" x="22" y="100" width="556" height="378"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMf-0I-hhx" userLabel="總金額Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="556" height="30"/>
@@ -98,14 +98,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwa-mT-jyE" userLabel="單點數Stack View">
                                         <rect key="frame" x="0.0" y="182" width="556" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="加點總數：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53n-6N-cQK">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="加點種類數：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53n-6N-cQK">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-wd-Etw">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="81" y="0.0" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="LNz-J6-xmA"/>
                                                 </constraints>
@@ -114,7 +114,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="z8y-0R-faa">
-                                                <rect key="frame" x="28" y="0.0" width="500" height="31"/>
+                                                <rect key="frame" x="109" y="0.0" width="419" height="31"/>
                                                 <connections>
                                                     <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3bg-IT-WuK"/>
                                                 </connections>
@@ -131,8 +131,52 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFM-ah-hZP" userLabel="加點總額Stack View">
+                                        <rect key="frame" x="0.0" y="228" width="556" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDC-dl-glR">
+                                                <rect key="frame" x="0.0" y="0.0" width="471" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwD-Ct-1nu">
+                                                <rect key="frame" x="471" y="0.0" width="85" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="85" id="J8J-7w-RgD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zDC-dl-glR" firstAttribute="leading" secondItem="EFM-ah-hZP" secondAttribute="leading" id="ABX-NG-y6b"/>
+                                            <constraint firstItem="TwD-Ct-1nu" firstAttribute="leading" secondItem="zDC-dl-glR" secondAttribute="trailing" id="a5d-UF-0Sb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6E-du-YPK" userLabel="我的加點Stack View">
+                                        <rect key="frame" x="0.0" y="265" width="556" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-Cl-HVC">
+                                                <rect key="frame" x="0.0" y="0.0" width="471" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fs-qw-slK">
+                                                <rect key="frame" x="471" y="0.0" width="85" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="85" id="tr7-8F-U5Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdG-p3-5zi" userLabel="我的金額Stack View">
-                                        <rect key="frame" x="0.0" y="228" width="556" height="30"/>
+                                        <rect key="frame" x="0.0" y="302" width="556" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的金額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5Y-0Z-hVe">
                                                 <rect key="frame" x="0.0" y="0.0" width="471" height="30"/>
@@ -151,7 +195,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4P-jE-Msk">
-                                        <rect key="frame" x="0.0" y="274" width="556" height="30"/>
+                                        <rect key="frame" x="0.0" y="348" width="556" height="30"/>
                                         <state key="normal" title="計算"/>
                                         <connections>
                                             <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJA-C9-poc"/>
@@ -165,7 +209,9 @@
                                     <constraint firstItem="L7e-UW-zI0" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="NV3-j9-Yqk"/>
                                     <constraint firstItem="vDz-xp-FKZ" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leadingMargin" constant="2" id="QmU-q8-NYg"/>
                                     <constraint firstItem="uMf-0I-hhx" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="Sli-lR-R1u"/>
+                                    <constraint firstItem="r6E-du-YPK" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="YA1-3Q-33u"/>
                                     <constraint firstItem="j4P-jE-Msk" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="Z01-VB-rry"/>
+                                    <constraint firstItem="EFM-ah-hZP" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="gkA-KE-aOV"/>
                                     <constraint firstItem="dwa-mT-jyE" firstAttribute="leading" secondItem="9z1-r2-MyB" secondAttribute="leading" id="zew-xj-Z2C"/>
                                 </constraints>
                             </stackView>
@@ -188,6 +234,8 @@
                         <outlet property="publicAmountField" destination="ps2-Ym-j50" id="gKw-pe-djH"/>
                         <outlet property="serviceChargeField" destination="vDz-xp-FKZ" id="c6D-eT-8TN"/>
                         <outlet property="sliderALaCarte" destination="z8y-0R-faa" id="87k-jr-fY5"/>
+                        <outlet property="totalofalacarte" destination="5Fs-qw-slK" id="3v8-xL-NYe"/>
+                        <outlet property="totalofallalalala" destination="TwD-Ct-1nu" id="vq6-hC-p4q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -215,11 +263,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-Gp-MbN">
-                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Rx5-RG-NtW"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-Gp-MbN">
+                                <rect key="frame" x="137" y="512" width="600" height="80"/>
                                 <state key="normal" title="返回主頁面"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5at-fw-wc1"/>
@@ -245,16 +290,16 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="ZSk-ln-1bT"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-hv-hCZ">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-hv-hCZ">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="Fng-Mn-V7y"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -298,21 +343,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGJ-Mv-wBI">
                                                 <rect key="frame" x="15" y="0.0" width="214" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-0b-fiB">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-0b-fiB">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="cJE-vc-Yok"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-uQ-s31">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-uQ-s31">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="wy8-cC-4DE"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -356,21 +401,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX7-Oe-1lf">
                                                 <rect key="frame" x="15" y="0.0" width="214" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-QL-HTz">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-QL-HTz">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="Tzt-hh-1IG"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opb-1M-Dci">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opb-1M-Dci">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="2tW-Gb-d5d"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -419,7 +464,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="nXz-2e-Mef"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -428,7 +473,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="Mio-BE-s6b"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -472,21 +517,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abV-56-jIP">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-vx-ldD">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-vx-ldD">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="GJm-mg-ex6"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k52-ks-n7C">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k52-ks-n7C">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="cCx-V2-o3J"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -530,21 +575,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhL-Jb-VSj">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrE-jV-iCu">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrE-jV-iCu">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="MB6-CW-Kul"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdA-ik-9fz">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdA-ik-9fz">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="IhC-rQ-fuq"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -588,21 +633,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-Iz-ePs">
                                                 <rect key="frame" x="12" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xub-3a-VfH">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xub-3a-VfH">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="3gq-Xw-uBI"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0r-Iv-tLd">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0r-Iv-tLd">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="hL1-KC-mGt"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -646,21 +691,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlC-Cu-5Zh">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xve-MA-9Qy">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xve-MA-9Qy">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="ttb-0b-qz7"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-AQ-YvO">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-AQ-YvO">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="rry-cc-Yzn"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -704,21 +749,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enN-ic-FRR">
                                                 <rect key="frame" x="15" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDG-Zp-47U">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDG-Zp-47U">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="fYo-D3-p7s"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7u-SD-ufY">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7u-SD-ufY">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="xZE-JP-yHI"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -762,21 +807,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fs4-OG-MTY">
                                                 <rect key="frame" x="22" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-9n-2NY">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-9n-2NY">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="6oj-d6-P8Y"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqd-I6-8Io">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqd-I6-8Io">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="k3n-wA-39M"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -823,21 +868,21 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0E-CM-4Ph">
                                                         <rect key="frame" x="20" y="0.0" width="140" height="30"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ws2-98-BXG">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ws2-98-BXG">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="0Zi-h3-rKu"/>
                                                                 </constraints>
-                                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rI-DL-7Zx">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rI-DL-7Zx">
                                                                 <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="60" id="ZVx-Ks-vVD"/>
                                                                 </constraints>
-                                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -883,21 +928,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-jh-4cI">
                                                 <rect key="frame" x="22" y="0.0" width="140" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入名稱" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3S-fj-LgZ">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名稱" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3S-fj-LgZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="eBS-8C-ZFT"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="輸入金額" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7e-27-ygX">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金額" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7e-27-ygX">
                                                         <rect key="frame" x="80" y="0.0" width="60" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="n9c-fd-8l0"/>
                                                         </constraints>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -948,46 +993,46 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-NW-Ino">
-                                <rect key="frame" x="105" y="510" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-fA-4GH">
-                                <rect key="frame" x="207" y="510" width="11" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Gnb-QV-0od"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-eK-blC">
-                                <rect key="frame" x="28" y="506" width="60" height="30"/>
-                                <state key="normal" title="計算總額"/>
-                                <connections>
-                                    <action selector="addition:" destination="tk1-X1-N1F" eventType="touchUpInside" id="kEv-0s-tnl"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的總額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-oE-0GF">
-                                <rect key="frame" x="105" y="539" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="並勾選自己的單點" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nX-As-I4L">
                                 <rect key="frame" x="11" y="75" width="104" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-NW-Ino">
+                                <rect key="frame" x="79" y="494" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-fA-4GH">
+                                <rect key="frame" x="164" y="494" width="11" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Gnb-QV-0od"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-eK-blC">
+                                <rect key="frame" x="11" y="503" width="60" height="30"/>
+                                <state key="normal" title="計算總額"/>
+                                <connections>
+                                    <action selector="addition:" destination="tk1-X1-N1F" eventType="touchUpInside" id="kEv-0s-tnl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的總額:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-oE-0GF">
+                                <rect key="frame" x="79" y="523" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTC-2x-GcV">
-                                <rect key="frame" x="207" y="539" width="11" height="21"/>
+                                <rect key="frame" x="164" y="523" width="11" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="tMo-ad-ET7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1000,10 +1045,10 @@
                             <constraint firstAttribute="trailing" secondItem="WxQ-20-udQ" secondAttribute="trailing" id="UmS-ZA-vx3"/>
                             <constraint firstAttribute="trailing" secondItem="XtE-Gp-MbN" secondAttribute="trailing" id="WyF-Cg-3mg"/>
                             <constraint firstItem="52U-zt-rac" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" id="bfA-et-caj"/>
-                            <constraint firstItem="XtE-Gp-MbN" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" id="c9l-WF-2o1"/>
+                            <constraint firstItem="XtE-Gp-MbN" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" constant="125" id="c9l-WF-2o1"/>
                             <constraint firstItem="WxQ-20-udQ" firstAttribute="top" secondItem="bgL-5F-zvN" secondAttribute="bottom" id="mvl-dp-nHA"/>
                             <constraint firstAttribute="trailing" secondItem="52U-zt-rac" secondAttribute="trailing" id="v23-FW-nXW"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="XtE-Gp-MbN" secondAttribute="bottom" id="wwW-9D-C8x"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XtE-Gp-MbN" secondAttribute="bottom" constant="20" id="wwW-9D-C8x"/>
                             <constraint firstItem="gRo-jA-VtP" firstAttribute="top" secondItem="bgL-5F-zvN" secondAttribute="bottom" constant="40" id="ytE-eY-ADG"/>
                         </constraints>
                     </view>
@@ -1033,6 +1078,7 @@
                         <outlet property="money7" destination="w0r-Iv-tLd" id="T9J-hu-3G9"/>
                         <outlet property="money8" destination="gSf-AQ-YvO" id="8kI-56-imA"/>
                         <outlet property="money9" destination="P7u-SD-ufY" id="0c7-lf-dpz"/>
+                        <outlet property="myTotal" destination="qTC-2x-GcV" id="R6V-f2-nqF"/>
                         <outlet property="number1" destination="UlN-4o-hiB" id="aie-VY-yiJ"/>
                         <outlet property="number10" destination="tgp-mZ-MjH" id="CrK-pz-s70"/>
                         <outlet property="number11" destination="qMI-wZ-I1B" id="GtM-tM-EAu"/>

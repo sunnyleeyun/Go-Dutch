@@ -20,9 +20,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderALaCarte: UISlider!
     @IBOutlet weak var numberOfSlider: UILabel!
   
+    
+    
+    @IBOutlet weak var totalofalacarte: UILabel!
+    var totalOfALaCarte = String()
+    
+    
+    @IBOutlet weak var totalofallalalala: UILabel!
+    var totalOfAllALALALA = String()
+    
+    
     func setInitialValue() {
         publicAmountField.text = "0"
         numberOfSlider.text = "0"
+       // Int(totalofalacarte) = 0
+       // Int(totalofallalalala) = 0
+        
     }
     
     
@@ -30,7 +43,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setInitialValue()
-        
+        totalofalacarte.text = totalOfALaCarte
+        totalofallalalala.text = totalOfAllALALALA
     
         // Do any additional setup after loading the view, typically from a nib
         
@@ -67,6 +81,10 @@ class ViewController: UIViewController {
                 
                 if let publicRealMoney = Double(publicAmountField.text!){
                     
+                    if let totalALA = Double(totalofalacarte.text!){
+                        
+                        if let totaltotal = Double(totalofallalalala.text!){
+                    
                 //calculate
                 var serviceChargeOrNot = 0.0
                 
@@ -82,13 +100,14 @@ class ViewController: UIViewController {
                 }
                 
                 myMoneyField.text = ""
+                
                     
                 
                 
 
                 let roundedBillAmount = round(100*billAmount)/100
                 let serviceChargeAmount = roundedBillAmount * serviceChargeOrNot
-                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney)/peopleAmount
+                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totaltotal)/peopleAmount+totalALA
 
                 if (!billAmountField.editing) && (!peopleAmountField.editing) {
                     billAmountField.text = String(format: "%.0f", roundedBillAmount)
@@ -96,6 +115,8 @@ class ViewController: UIViewController {
                     publicAmountField.text = String(format: "%.0f", publicRealMoney)
                 }
                 myMoneyField.text = String(format: "%.2f", myRealAmount)
+                        }
+                }
                 }
             }
         }

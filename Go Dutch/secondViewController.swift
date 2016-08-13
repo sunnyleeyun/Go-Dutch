@@ -76,8 +76,10 @@ class secondViewController: UIViewController {
     var LabelText = String()
     
     
+    
     @IBOutlet weak var totaltotal: UILabel!
     
+    @IBOutlet weak var myTotal: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,8 +101,11 @@ class secondViewController: UIViewController {
     
     
     
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : ViewController = segue.destinationViewController as! ViewController
+        DestViewController.totalOfALaCarte = myTotal.text!
+        DestViewController.totalOfAllALALALA = totaltotal.text!
         
     }
 
@@ -130,15 +135,90 @@ class secondViewController: UIViewController {
         var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10, 11: money11, 12: money12]
         var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10, 11: number11, 12: number12]
         var totalDiction3 = [1: check1, 2: check2, 3: check3, 4: check4, 5: check5, 6: check6, 7: check7, 8: check8, 9: check9, 10: number10, 11: check11, 12: check12]
+       
+        
+        var totalSum = 0
+        var test = 0
+        var myTotalSum = 0
+        var myTest = 0
+        
+        
         
         if let counter = Int(LabelText){
             for iindex in 1...12 {
                 if let iindex1 = Int(totalDiction1[iindex]!.text!){
                     if let iindex2 = Int(totalDiction2[iindex]!.text!){
-                        var test = iindex1 * iindex2
+                        
+
+                            test = iindex1 * iindex2
+                            totalSum += test
+                        
+                        if check1.isChecked == true && iindex == 1 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check2.isChecked == true && iindex == 2 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check3.isChecked == true && iindex == 3 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check4.isChecked == true && iindex == 4 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check5.isChecked == true && iindex == 5 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check6.isChecked == true && iindex == 6 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check7.isChecked == true && iindex == 7 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check8.isChecked == true && iindex == 8 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check9.isChecked == true && iindex == 9 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check10.isChecked == true && iindex == 10 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check11.isChecked == true && iindex == 11 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+                        else if check12.isChecked == true && iindex == 12 {
+                            myTest = iindex1 * iindex2
+                            myTotalSum += myTest
+                        }
+
+                        
+                        
+                        //check1.isChecked
+                        //totalDiction3[1]!.isChecked!
+                        //print("total is \(totalDiction3[1])")
+                        //print("totlal2 is \(check1)")
+                        /*
+                        if (totalDiction3[1]!.isChecked == true) {
+                            
+                        }
+ */
+ 
+
+                        //print("test is \(test), and totlasum is \(totalSum)")
                         //if (check1.isChecked == true)
                        // {
-                           // totaltotal.text = (String)(test)
+
                            // mytotal.text
                        // }
 
@@ -146,7 +226,8 @@ class secondViewController: UIViewController {
                 }
             }
         }
-        
+        totaltotal.text = (String)(totalSum)
+        myTotal.text = (String)(myTotalSum)
     }
     
     func usingDictionary(){
