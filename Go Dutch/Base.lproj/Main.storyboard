@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9z1-r2-MyB" userLabel="分帳Super Stack View">
-                                <rect key="frame" x="22" y="100" width="556" height="396"/>
+                                <rect key="frame" x="22" y="90" width="556" height="396"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMf-0I-hhx" userLabel="總金額Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="556" height="30"/>
@@ -99,13 +99,13 @@
                                         <rect key="frame" x="0.0" y="182" width="556" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="加點種類數：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53n-6N-cQK">
-                                                <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-wd-Etw">
-                                                <rect key="frame" x="37" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="25" y="0.0" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="LNz-J6-xmA"/>
                                                 </constraints>
@@ -114,7 +114,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="z8y-0R-faa">
-                                                <rect key="frame" x="65" y="0.0" width="463" height="31"/>
+                                                <rect key="frame" x="53" y="0.0" width="475" height="31"/>
                                                 <connections>
                                                     <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3bg-IT-WuK"/>
                                                 </connections>
@@ -217,7 +217,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UKx-ZC-lQU" secondAttribute="trailing" id="77N-Nu-0kn"/>
                             <constraint firstItem="UKx-ZC-lQU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MdV-YI-0zN"/>
-                            <constraint firstItem="9z1-r2-MyB" firstAttribute="top" secondItem="UKx-ZC-lQU" secondAttribute="bottom" constant="20" id="VrW-vb-u5u"/>
+                            <constraint firstItem="9z1-r2-MyB" firstAttribute="top" secondItem="UKx-ZC-lQU" secondAttribute="bottom" constant="10" id="VrW-vb-u5u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9z1-r2-MyB" secondAttribute="trailing" constant="2" id="YVo-8y-eSJ"/>
                             <constraint firstItem="UKx-ZC-lQU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="dLy-fr-yDd"/>
                             <constraint firstItem="9z1-r2-MyB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="smg-0z-JoO"/>
