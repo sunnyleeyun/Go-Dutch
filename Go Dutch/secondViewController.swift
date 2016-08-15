@@ -34,8 +34,6 @@ class secondViewController: UIViewController {
     @IBOutlet weak var number8: UITextField!
     @IBOutlet weak var number9: UITextField!
     @IBOutlet weak var number10: UITextField!
-    @IBOutlet weak var number11: UITextField!
-    @IBOutlet weak var number12: UITextField!
     
     
     
@@ -50,9 +48,6 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack8: UIStackView!
     @IBOutlet weak var stack9: UIStackView!
     @IBOutlet weak var stack10: UIStackView!
-    @IBOutlet weak var stack11: UIStackView!
-    @IBOutlet weak var stack12: UIStackView!
-   
     
     @IBOutlet weak var check1: CheckBox!
     @IBOutlet weak var check2: CheckBox!
@@ -64,8 +59,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var check8: CheckBox!
     @IBOutlet weak var check9: CheckBox!
     @IBOutlet weak var check10: CheckBox!
-    @IBOutlet weak var check11: CheckBox!
-    @IBOutlet weak var check12: CheckBox!
+
     
     
     
@@ -110,9 +104,9 @@ class secondViewController: UIViewController {
     
     
     @IBAction func addition(sender: UIButton) {
-        var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10, 11: money11, 12: money12]
-        var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10, 11: number11, 12: number12]
-        var totalDiction3 = [1: check1, 2: check2, 3: check3, 4: check4, 5: check5, 6: check6, 7: check7, 8: check8, 9: check9, 10: number10, 11: check11, 12: check12]
+        var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10]
+        var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10]
+        var totalDiction3 = [1: check1, 2: check2, 3: check3, 4: check4, 5: check5, 6: check6, 7: check7, 8: check8, 9: check9, 10: number10]
        
         
         var totalSum = 0
@@ -171,15 +165,6 @@ class secondViewController: UIViewController {
                             myTest = iindex1 * iindex2
                             myTotalSum += myTest
                         }
-                        else if check11.isChecked == true && iindex == 11 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check12.isChecked == true && iindex == 12 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                      
                     }
                 }
             }
@@ -189,10 +174,10 @@ class secondViewController: UIViewController {
     }
     
     func usingDictionary(){
-        var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10, 11: stack11, 12: stack12]
+        var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10]
         if let counter = Int(LabelText){ //viewcontroller多少就多少
-            for index in 1...12{//因為diction有12個
-                if let stackIndex = diction[index]{//stack[index] = stack[1~12]
+            for index in 1...10{//因為diction有12個
+                if let stackIndex = diction[index]{//stack[index] = stack[1~10]
                     if counter < index {
                         stackIndex.hidden = true
                     }
