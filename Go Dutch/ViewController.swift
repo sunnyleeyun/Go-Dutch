@@ -13,9 +13,16 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var billAmountField: UITextField!
+    var textBillAmount = String()
+    
     @IBOutlet weak var serviceChargeField: UISegmentedControl!
+    
     @IBOutlet weak var peopleAmountField: UITextField!
+    var textPepopleAmount = String()
+    
     @IBOutlet weak var publicAmountField: UITextField!
+    var textPublicAmount = String()
+    
     @IBOutlet weak var myMoneyField: UITextField!
     @IBOutlet weak var sliderALaCarte: UISlider!
     @IBOutlet weak var numberOfSlider: UILabel!
@@ -55,7 +62,9 @@ class ViewController: UIViewController {
         
      
         numberOfSlider.text = textNumberOfSlider
-        
+        billAmountField.text = textBillAmount
+        peopleAmountField.text = textPepopleAmount
+        publicAmountField.text = textPublicAmount
         
       
         
@@ -73,6 +82,9 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : secondViewController = segue.destinationViewController as! secondViewController
         DestViewController.LabelText = numberOfSlider.text!
+        DestViewController.TextBillAmount = billAmountField.text!
+        DestViewController.TextPeopleAmount = peopleAmountField.text!
+        DestViewController.TextPublicAmount = publicAmountField.text!
     }
     
     

@@ -262,7 +262,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="52U-zt-rac" userLabel="Super Stack View">
-                                <rect key="frame" x="0.0" y="100" width="600" height="402"/>
+                                <rect key="frame" x="0.0" y="100" width="600" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-VP-7rZ" userLabel="Stack View 1">
                                         <rect key="frame" x="166" y="0.0" width="269" height="30"/>
@@ -309,6 +309,11 @@
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="RRX-hv-hCZ" firstAttribute="leading" secondItem="qpF-ku-zo0" secondAttribute="trailing" constant="8" id="Ax6-Oh-cEY"/>
+                                                    <constraint firstItem="qpF-ku-zo0" firstAttribute="leading" secondItem="yTn-ip-TZ6" secondAttribute="leading" constant="8" id="cmV-2c-BXR"/>
+                                                    <constraint firstItem="qqZ-TS-C2r" firstAttribute="leading" secondItem="RRX-hv-hCZ" secondAttribute="trailing" constant="20" id="zPJ-YH-jGK"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbl-Ry-jxF">
                                                 <rect key="frame" x="226" y="0.0" width="17" height="30"/>
@@ -321,6 +326,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="irj-gy-fLz" secondAttribute="trailing" id="3tK-kD-UUt"/>
+                                            <constraint firstItem="R9Y-lo-u9h" firstAttribute="leading" secondItem="Zpj-VP-7rZ" secondAttribute="leading" constant="5" id="WkU-g8-9U7"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-dl-v1B" userLabel="Stack View 2">
                                         <rect key="frame" x="164" y="33" width="272" height="30"/>
@@ -367,6 +376,10 @@
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="S3s-uQ-s31" firstAttribute="leading" secondItem="qoy-0b-fiB" secondAttribute="trailing" constant="8" id="7Bu-3G-dzV"/>
+                                                    <constraint firstItem="qoy-0b-fiB" firstAttribute="leading" secondItem="zGJ-Mv-wBI" secondAttribute="leading" constant="8" id="APj-0X-IXG"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF2-mM-6sq">
                                                 <rect key="frame" x="229" y="0.0" width="17" height="30"/>
@@ -379,6 +392,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RbH-xT-9ej" secondAttribute="trailing" id="XzY-qa-2Z2"/>
+                                            <constraint firstItem="O58-z3-4nO" firstAttribute="leading" secondItem="JJa-dl-v1B" secondAttribute="leading" constant="5" id="aCO-cd-4bK"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmx-7d-sQi" userLabel="Stack View 3">
                                         <rect key="frame" x="164" y="66" width="272" height="30"/>
@@ -425,6 +442,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xO0-QL-HTz" firstAttribute="leading" secondItem="cX7-Oe-1lf" secondAttribute="leading" constant="8" id="46W-gx-bP5"/>
+                                                    <constraint firstItem="opb-1M-Dci" firstAttribute="leading" secondItem="xO0-QL-HTz" secondAttribute="trailing" constant="8" id="66q-4u-Ltg"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyO-vd-3ei">
                                                 <rect key="frame" x="229" y="0.0" width="17" height="30"/>
@@ -437,6 +458,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6ep-bA-8iU" secondAttribute="trailing" id="b64-7Y-ovQ"/>
+                                            <constraint firstItem="4FI-H5-ngh" firstAttribute="leading" secondItem="lmx-7d-sQi" secondAttribute="leading" constant="5" id="mCj-Ko-2JJ"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXt-xy-LsL" userLabel="Stack View 4">
                                         <rect key="frame" x="164" y="99" width="272" height="30"/>
@@ -469,6 +494,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="qJ3-lF-Sy4" firstAttribute="leading" secondItem="yOd-0J-DFW" secondAttribute="trailing" constant="8" id="8sk-FU-Afg"/>
+                                                    <constraint firstItem="yOd-0J-DFW" firstAttribute="leading" secondItem="x3v-SQ-7fT" secondAttribute="leading" constant="8" id="ovt-N1-Pv6"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-kg-l4h">
                                                 <rect key="frame" x="155" y="0.0" width="34" height="30"/>
@@ -495,6 +524,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="c83-vO-5ez" firstAttribute="leading" secondItem="xXt-xy-LsL" secondAttribute="leading" constant="5" id="84U-dO-AYo"/>
+                                            <constraint firstAttribute="trailing" secondItem="K8O-zk-uEH" secondAttribute="trailing" id="lUq-5m-e1l"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-6y-sI5" userLabel="Stack View 5">
                                         <rect key="frame" x="164" y="132" width="272" height="30"/>
@@ -527,6 +560,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="k52-ks-n7C" firstAttribute="leading" secondItem="YXb-vx-ldD" secondAttribute="trailing" constant="8" id="YMm-RQ-W4G"/>
+                                                    <constraint firstItem="YXb-vx-ldD" firstAttribute="leading" secondItem="abV-56-jIP" secondAttribute="leading" constant="8" id="jMJ-Mk-9JR"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-ix-qgN">
                                                 <rect key="frame" x="155" y="0.0" width="34" height="30"/>
@@ -553,6 +590,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mec-4c-Oun" secondAttribute="trailing" id="lHe-oB-kLE"/>
+                                            <constraint firstItem="70I-ds-vCi" firstAttribute="leading" secondItem="fSN-6y-sI5" secondAttribute="leading" constant="5" id="zY0-wp-pBk"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bj6-3y-Dpe" userLabel="Stack View 6">
                                         <rect key="frame" x="164" y="165" width="272" height="30"/>
@@ -585,6 +626,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="HrE-jV-iCu" firstAttribute="leading" secondItem="rhL-Jb-VSj" secondAttribute="leading" constant="8" id="ZM6-Bc-xVf"/>
+                                                    <constraint firstItem="mdA-ik-9fz" firstAttribute="leading" secondItem="HrE-jV-iCu" secondAttribute="trailing" constant="8" id="bAE-el-ves"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zK-Oo-cx6">
                                                 <rect key="frame" x="155" y="0.0" width="34" height="30"/>
@@ -611,6 +656,11 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XUx-V8-eZD" firstAttribute="leading" secondItem="bj6-3y-Dpe" secondAttribute="leading" constant="5" id="Xn0-Fi-Wwq"/>
+                                            <constraint firstItem="XUx-V8-eZD" firstAttribute="leading" secondItem="bj6-3y-Dpe" secondAttribute="leading" constant="5" id="j6I-2y-tYZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="tAn-fP-SM4" secondAttribute="trailing" id="vPn-Ik-vPh"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-fY-BQF" userLabel="Stack View 7">
                                         <rect key="frame" x="166" y="198" width="269" height="30"/>
@@ -643,6 +693,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="w0r-Iv-tLd" firstAttribute="leading" secondItem="xub-3a-VfH" secondAttribute="trailing" constant="8" id="Ee9-yc-Gw7"/>
+                                                    <constraint firstItem="xub-3a-VfH" firstAttribute="leading" secondItem="IMg-Iz-ePs" secondAttribute="leading" constant="8" id="z5k-aJ-EJp"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX8-2F-Dzp">
                                                 <rect key="frame" x="152" y="0.0" width="34" height="30"/>
@@ -669,6 +723,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vue-uH-qOc" firstAttribute="leading" secondItem="Oyh-fY-BQF" secondAttribute="leading" constant="5" id="X6G-KC-wpq"/>
+                                            <constraint firstAttribute="trailing" secondItem="n8Z-Uw-zUJ" secondAttribute="trailing" id="nla-cV-exf"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0P-Dx-Jk9" userLabel="Stack View 8">
                                         <rect key="frame" x="164" y="231" width="272" height="30"/>
@@ -701,6 +759,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xve-MA-9Qy" firstAttribute="leading" secondItem="XlC-Cu-5Zh" secondAttribute="leading" constant="8" id="4j3-hw-ccl"/>
+                                                    <constraint firstItem="gSf-AQ-YvO" firstAttribute="leading" secondItem="xve-MA-9Qy" secondAttribute="trailing" constant="8" id="nFb-XO-Qll"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1X-0H-wAP">
                                                 <rect key="frame" x="155" y="0.0" width="34" height="30"/>
@@ -727,6 +789,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZbZ-iY-65N" secondAttribute="trailing" id="LSw-3q-jQA"/>
+                                            <constraint firstItem="hpA-Oc-VGz" firstAttribute="leading" secondItem="t0P-Dx-Jk9" secondAttribute="leading" constant="5" id="fVv-Y4-OD7"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfI-6Z-dOe" userLabel="Stack View 9">
                                         <rect key="frame" x="164" y="264" width="272" height="30"/>
@@ -759,6 +825,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="P7u-SD-ufY" firstAttribute="leading" secondItem="MDG-Zp-47U" secondAttribute="trailing" constant="8" id="fEq-PV-cuy"/>
+                                                    <constraint firstItem="MDG-Zp-47U" firstAttribute="leading" secondItem="enN-ic-FRR" secondAttribute="leading" constant="8" id="kfT-Du-ni5"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="907-XH-F9y">
                                                 <rect key="frame" x="155" y="0.0" width="34" height="30"/>
@@ -785,6 +855,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Z54-zX-XDU" firstAttribute="leading" secondItem="nfI-6Z-dOe" secondAttribute="leading" constant="5" id="w9i-7o-8ai"/>
+                                            <constraint firstAttribute="trailing" secondItem="n4D-m4-usG" secondAttribute="trailing" id="yOe-DA-zI0"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4z-Nc-Vcn" userLabel="Stack View 10">
                                         <rect key="frame" x="161" y="297" width="279" height="30"/>
@@ -817,6 +891,10 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="lqd-I6-8Io" firstAttribute="leading" secondItem="xWf-9n-2NY" secondAttribute="trailing" constant="6" id="4Dc-g0-xL5"/>
+                                                    <constraint firstItem="xWf-9n-2NY" firstAttribute="leading" secondItem="fs4-OG-MTY" secondAttribute="leading" constant="6" id="Vbw-9n-gsY"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXR-C8-BjX">
                                                 <rect key="frame" x="162" y="0.0" width="34" height="30"/>
@@ -843,6 +921,10 @@
                                                 <state key="normal" image="emptycheckbox"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="n1o-1c-hci" secondAttribute="trailing" id="47E-8c-MIA"/>
+                                            <constraint firstItem="dSd-rK-Snz" firstAttribute="leading" secondItem="S4z-Nc-Vcn" secondAttribute="leading" constant="5" id="yL5-1e-wjd"/>
+                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-eK-blC">
                                         <rect key="frame" x="270" y="330" width="60" height="30"/>
@@ -851,46 +933,6 @@
                                             <action selector="addition:" destination="tk1-X1-N1F" eventType="touchUpInside" id="kEv-0s-tnl"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTL-iK-x6q" userLabel="加點總額Stack View">
-                                        <rect key="frame" x="238" y="363" width="125" height="18"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-NW-Ino">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-fA-4GH">
-                                                <rect key="frame" x="75" y="0.0" width="50" height="18"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="Gnb-QV-0od"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-Oy-owS" userLabel="我的加點Stack View">
-                                        <rect key="frame" x="238" y="384" width="125" height="18"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-oE-0GF">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTC-2x-GcV">
-                                                <rect key="frame" x="75" y="0.0" width="50" height="18"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="tMo-ad-ET7"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRo-jA-VtP">
@@ -916,13 +958,81 @@
                                 <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-Gp-MbN">
-                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NGc-qU-roA">
+                                <rect key="frame" x="11" y="505" width="52" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeB-ei-nbK">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-kG-Fin">
+                                        <rect key="frame" x="0.0" y="21" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stt-zK-x92">
+                                        <rect key="frame" x="0.0" y="42" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-Gp-MbN">
+                                <rect key="frame" x="0.0" y="538" width="600" height="80"/>
                                 <state key="normal" title="返回主頁面"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5at-fw-wc1"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBq-u4-Wid" userLabel="加點總額Stack View">
+                                <rect key="frame" x="145" y="493" width="125" height="18"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTL-iK-x6q" userLabel="加點總額Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="加點總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-NW-Ino">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-fA-4GH">
+                                        <rect key="frame" x="75" y="0.0" width="50" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Gnb-QV-0od"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWc-Cg-GSP" userLabel="我的總額Stack View">
+                                <rect key="frame" x="145" y="519" width="125" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="我的總額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-oE-0GF">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTC-2x-GcV">
+                                        <rect key="frame" x="75" y="0.0" width="50" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="tMo-ad-ET7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -930,7 +1040,7 @@
                             <constraint firstAttribute="trailing" secondItem="gRo-jA-VtP" secondAttribute="trailing" constant="10" id="5Lb-QG-0EB"/>
                             <constraint firstItem="52U-zt-rac" firstAttribute="top" secondItem="WxQ-20-udQ" secondAttribute="bottom" constant="20" id="9kW-WO-BcB"/>
                             <constraint firstAttribute="trailing" secondItem="WxQ-20-udQ" secondAttribute="trailing" id="UmS-ZA-vx3"/>
-                            <constraint firstAttribute="trailing" secondItem="XtE-Gp-MbN" secondAttribute="trailing" id="WyF-Cg-3mg"/>
+                            <constraint firstAttribute="centerX" secondItem="XtE-Gp-MbN" secondAttribute="centerX" id="WyF-Cg-3mg"/>
                             <constraint firstItem="52U-zt-rac" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" id="bfA-et-caj"/>
                             <constraint firstItem="XtE-Gp-MbN" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" constant="125" id="c9l-WF-2o1"/>
                             <constraint firstItem="WxQ-20-udQ" firstAttribute="top" secondItem="bgL-5F-zvN" secondAttribute="bottom" id="mvl-dp-nHA"/>
@@ -940,6 +1050,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="TextBill" destination="TeB-ei-nbK" id="UoZ-bJ-j18"/>
+                        <outlet property="TextPeople" destination="b2x-kG-Fin" id="7fX-mf-wLv"/>
+                        <outlet property="TextPublic" destination="Stt-zK-x92" id="i20-MR-zLy"/>
                         <outlet property="check1" destination="irj-gy-fLz" id="ESS-JU-SkJ"/>
                         <outlet property="check10" destination="n1o-1c-hci" id="vaU-ks-0pq"/>
                         <outlet property="check2" destination="RbH-xT-9ej" id="ahA-b6-v8R"/>

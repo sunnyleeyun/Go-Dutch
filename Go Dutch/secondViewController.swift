@@ -57,6 +57,12 @@ class secondViewController: UIViewController {
     @IBOutlet weak var check10: CheckBox!
 
     
+    @IBOutlet weak var TextBill: UILabel!
+    var TextBillAmount = String()
+    @IBOutlet weak var TextPeople: UILabel!
+    var TextPeopleAmount = String()
+    @IBOutlet weak var TextPublic: UILabel!
+    var TextPublicAmount = String()
     
     
     
@@ -73,8 +79,10 @@ class secondViewController: UIViewController {
         super.viewDidLoad()
         
         usingDictionary()
-        //
         labeltest.text = LabelText
+        TextBill.text = TextBillAmount
+        TextPeople.text = TextPeopleAmount
+        TextPublic.text = TextPublicAmount
         //
 
         // Do any additional setup after loading the view.
@@ -92,6 +100,9 @@ class secondViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : ViewController = segue.destinationViewController as! ViewController
+        DestViewController.textBillAmount = TextBill.text!
+        DestViewController.textPepopleAmount = TextPeople.text!
+        DestViewController.textPublicAmount = TextPublic.text!
         DestViewController.textMyALa = myTotal.text!
         DestViewController.textSumOfTotalALa = totaltotal.text!
         DestViewController.textNumberOfSlider = labeltest.text!
