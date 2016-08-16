@@ -122,7 +122,10 @@ class ViewController: UIViewController {
 
                 let roundedBillAmount = round(100*billAmount)/100
                 let serviceChargeAmount = roundedBillAmount * serviceChargeOrNot
-                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totaltotal)/peopleAmount+totalALA
+                let totaltotalIncludeServ = totaltotal + totaltotal * serviceChargeOrNot
+                let totalALAIncludeServ = totalALA + totalALA * serviceChargeOrNot
+                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totaltotalIncludeServ)/peopleAmount+totalALAIncludeServ
+                
 
                 if (!billAmountField.editing) && (!peopleAmountField.editing) {
                     billAmountField.text = String(format: "%.0f", roundedBillAmount)

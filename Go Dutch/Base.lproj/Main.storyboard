@@ -917,7 +917,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-Gp-MbN">
-                                <rect key="frame" x="216" y="512" width="600" height="80"/>
+                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                 <state key="normal" title="返回主頁面"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5at-fw-wc1"/>

@@ -20,9 +20,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var money8: UITextField!
     @IBOutlet weak var money9: UITextField!
     @IBOutlet weak var money10: UITextField!
-    @IBOutlet weak var money11: UITextField!
-    @IBOutlet weak var money12: UITextField!
-    
+ 
     
     @IBOutlet weak var number1: UITextField!
     @IBOutlet weak var number2: UITextField!
@@ -34,8 +32,6 @@ class secondViewController: UIViewController {
     @IBOutlet weak var number8: UITextField!
     @IBOutlet weak var number9: UITextField!
     @IBOutlet weak var number10: UITextField!
-    
-    
     
     
     @IBOutlet weak var stack1: UIStackView!
@@ -117,7 +113,7 @@ class secondViewController: UIViewController {
         
         
         if let counter = Int(LabelText){
-            for iindex in 1...12 {
+            for iindex in 1...10 {
                 if let iindex1 = Int(totalDiction1[iindex]!.text!){
                     if let iindex2 = Int(totalDiction2[iindex]!.text!){
                         
