@@ -56,15 +56,19 @@ class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
-        setInitialValue()
-
         super.viewDidLoad()
         
+        //setInitialValue()
+        
+        sumOfTotalALa.text = textSumOfTotalALa
+        myALa.text = textMyALa
+
      
         numberOfSlider.text = textNumberOfSlider
         billAmountField.text = textBillAmount
         peopleAmountField.text = textPepopleAmount
         publicAmountField.text = textPublicAmount
+        
         
       
         
@@ -136,7 +140,7 @@ class ViewController: UIViewController {
                 let serviceChargeAmount = roundedBillAmount * serviceChargeOrNot
                 let totaltotalIncludeServ = totaltotal + totaltotal * serviceChargeOrNot
                 let totalALAIncludeServ = totalALA + totalALA * serviceChargeOrNot
-                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totaltotalIncludeServ)/peopleAmount+totalALAIncludeServ
+                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totalALAIncludeServ)/peopleAmount+totaltotalIncludeServ
                 
 
                 if (!billAmountField.editing) && (!peopleAmountField.editing) {
