@@ -1025,8 +1025,8 @@
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="lqd-I6-8Io" firstAttribute="leading" secondItem="xWf-9n-2NY" secondAttribute="trailing" constant="6" id="4Dc-g0-xL5"/>
-                                                    <constraint firstItem="xWf-9n-2NY" firstAttribute="leading" secondItem="fs4-OG-MTY" secondAttribute="leading" constant="6" id="Vbw-9n-gsY"/>
+                                                    <constraint firstItem="lqd-I6-8Io" firstAttribute="leading" secondItem="xWf-9n-2NY" secondAttribute="trailing" constant="3" id="4Dc-g0-xL5"/>
+                                                    <constraint firstItem="xWf-9n-2NY" firstAttribute="leading" secondItem="fs4-OG-MTY" secondAttribute="leading" constant="3" id="Vbw-9n-gsY"/>
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXR-C8-BjX">
