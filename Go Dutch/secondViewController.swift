@@ -107,6 +107,19 @@ class secondViewController: UIViewController {
         DestViewController.textSumOfTotalALa = totaltotal.text!
         DestViewController.textNumberOfSlider = labeltest.text!
     }
+    
+    
+    
+    @IBAction func check1(sender: CheckBox) {
+        if let num1 = number1!.text {
+            if check1.isChecked == true && Int(num1) >= 2 {
+                print("abcdefghi")//this is working
+            }
+        }
+    }
+    
+    
+    
 
     
     

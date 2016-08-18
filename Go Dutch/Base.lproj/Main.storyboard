@@ -449,6 +449,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irj-gy-fLz" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="35" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check1:" destination="tk1-X1-N1F" eventType="touchUpInside" id="1si-Rx-SY0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
