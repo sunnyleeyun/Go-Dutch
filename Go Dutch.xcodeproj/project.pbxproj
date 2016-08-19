@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB181941D66284C00CF3B8D /* MoreThanOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB181931D66284C00CF3B8D /* MoreThanOne.xib */; };
+		9BB181961D66287400CF3B8D /* MoreThanOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB181951D66287400CF3B8D /* MoreThanOne.swift */; };
 		9BB3D21E1D5C2C5A0029B937 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D21D1D5C2C5A0029B937 /* secondViewController.swift */; };
 		9BE7D5F21D58378000A8A08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7D5F11D58378000A8A08C /* AppDelegate.swift */; };
 		9BE7D5F41D58378000A8A08C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7D5F31D58378000A8A08C /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BB181931D66284C00CF3B8D /* MoreThanOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreThanOne.xib; sourceTree = "<group>"; };
+		9BB181951D66287400CF3B8D /* MoreThanOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreThanOne.swift; sourceTree = "<group>"; };
 		9BB3D21D1D5C2C5A0029B937 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		9BE7D5EE1D58377F00A8A08C /* Go Dutch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Dutch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE7D5F11D58378000A8A08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				9BE7D5F81D58378000A8A08C /* Assets.xcassets */,
 				9BE7D5FA1D58378000A8A08C /* LaunchScreen.storyboard */,
 				9BE7D5FD1D58378000A8A08C /* Info.plist */,
+				9BB181931D66284C00CF3B8D /* MoreThanOne.xib */,
+				9BB181951D66287400CF3B8D /* MoreThanOne.swift */,
 			);
 			path = "Go Dutch";
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB181941D66284C00CF3B8D /* MoreThanOne.xib in Resources */,
 				9BE7D5FC1D58378000A8A08C /* LaunchScreen.storyboard in Resources */,
 				9BE7D5F91D58378000A8A08C /* Assets.xcassets in Resources */,
 				9BE7D5F71D58378000A8A08C /* Main.storyboard in Resources */,
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB181961D66287400CF3B8D /* MoreThanOne.swift in Sources */,
 				9BE7D5F41D58378000A8A08C /* ViewController.swift in Sources */,
 				9BB3D21E1D5C2C5A0029B937 /* secondViewController.swift in Sources */,
 				9BE7D5F21D58378000A8A08C /* AppDelegate.swift in Sources */,

@@ -113,7 +113,7 @@ class secondViewController: UIViewController {
     @IBAction func check1(sender: CheckBox) {
         if let num1 = number1!.text {
             if check1.isChecked == true && Int(num1) >= 2 {
-                print("abcdefghi")//this is working
+                print("abcdefghi")//this works
             }
         }
     }
