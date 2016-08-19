@@ -103,17 +103,14 @@ class secondViewController: UIViewController {
     
     
     // view hide button
-    func myHideButtonTapped(sender:UIButton){
-        moreThanOneSubview.removeFromSuperview()
+    func myHiddenButtonTapped(sender:UIButton){
+        moreThanOneSubview.hidden = true
     }
     //checkboxes for subview
     @IBAction func check1(sender: CheckBox) {
         if let num1 = number1!.text {
             if Int(num1) >= 2 && check1.isChecked == false {
                 moreThanOneSubview.hidden = false
-            }
-            if moreThanOneSubview != nil && !moreThanOneSubview.hidden {
-                moreThanOneSubview.removeFromSuperview()
             }
             moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
             self.view.addSubview(moreThanOneSubview)
