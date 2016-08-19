@@ -45,6 +45,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack9: UIStackView!
     @IBOutlet weak var stack10: UIStackView!
     
+    
     @IBOutlet weak var check1: CheckBox!
     @IBOutlet weak var check2: CheckBox!
     @IBOutlet weak var check3: CheckBox!
@@ -55,7 +56,10 @@ class secondViewController: UIViewController {
     @IBOutlet weak var check8: CheckBox!
     @IBOutlet weak var check9: CheckBox!
     @IBOutlet weak var check10: CheckBox!
-
+    
+    
+    @IBOutlet weak var moreThanOneSubview: MoreThanOne!
+    
     
     @IBOutlet weak var TextBill: UILabel!
     var TextBillAmount = String()
@@ -112,13 +116,75 @@ class secondViewController: UIViewController {
     
     @IBAction func check1(sender: CheckBox) {
         if let num1 = number1!.text {
-            if check1.isChecked == true && Int(num1) >= 2 {
-                print("abcdefghi")//this works
+            if Int(num1) >= 2 && check1.isChecked == false {
+                moreThanOneSubview.hidden = false
             }
         }
     }
     
-    
+    @IBAction func check2(sender: CheckBox) {
+        if let num2 = number2!.text {
+            if Int(num2) >= 2 && check2.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check3(sender: CheckBox) {
+        if let num3 = number3!.text {
+            if Int(num3) >= 2 && check3.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check4(sender: CheckBox) {
+        if let num4 = number4!.text {
+            if Int(num4) >= 2 && check4.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check5(sender: CheckBox) {
+        if let num5 = number5!.text {
+            if Int(num5) >= 2 && check5.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check6(sender: CheckBox) {
+        if let num6 = number6!.text {
+            if Int(num6) >= 2 && check6.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check7(sender: CheckBox) {
+        if let num7 = number7!.text {
+            if Int(num7) >= 2 && check7.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check8(sender: CheckBox) {
+        if let num8 = number8!.text {
+            if Int(num8) >= 2 && check8.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check9(sender: CheckBox) {
+        if let num9 = number9!.text {
+            if Int(num9) >= 2 && check9.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
+    @IBAction func check10(sender: CheckBox) {
+        if let num10 = number10!.text {
+            if Int(num10) >= 2 && check10.isChecked == false {
+                moreThanOneSubview.hidden = false
+            }
+        }
+    }
     
 
     

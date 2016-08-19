@@ -399,6 +399,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbH-xT-9ej" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check2:" destination="tk1-X1-N1F" eventType="touchUpInside" id="Z92-A9-mDN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -465,6 +468,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ep-bA-8iU" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check3:" destination="tk1-X1-N1F" eventType="touchUpInside" id="88S-bF-oUM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -531,6 +537,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-zk-uEH" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check4:" destination="tk1-X1-N1F" eventType="touchUpInside" id="XX2-QA-128"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -597,6 +606,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mec-4c-Oun" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check5:" destination="tk1-X1-N1F" eventType="touchUpInside" id="DeL-3U-1i3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -663,6 +675,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAn-fP-SM4" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check6:" destination="tk1-X1-N1F" eventType="touchUpInside" id="j1N-Xa-Xcd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -733,6 +748,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8Z-Uw-zUJ" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="35" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check7:" destination="tk1-X1-N1F" eventType="touchUpInside" id="WHL-V5-pD7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -802,6 +820,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-iY-65N" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check8:" destination="tk1-X1-N1F" eventType="touchUpInside" id="OQA-TE-3n2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -868,6 +889,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-m4-usG" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="243" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check9:" destination="tk1-X1-N1F" eventType="touchUpInside" id="DOH-z3-Dni"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -934,6 +958,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1o-1c-hci" customClass="CheckBox" customModule="Go_Dutch" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="0.0" width="26" height="30"/>
                                                 <state key="normal" image="emptycheckbox"/>
+                                                <connections>
+                                                    <action selector="check10:" destination="tk1-X1-N1F" eventType="touchUpInside" id="1zL-oH-df4"/>
+                                                    <action selector="check9:" destination="tk1-X1-N1F" eventType="touchUpInside" id="PlW-b7-fwR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -1065,9 +1093,9 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5at-fw-wc1"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lL-4I-wae" customClass="MoreThanOne" customModule="Go_Dutch" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lL-4I-wae" customClass="MoreThanOne" customModule="Go_Dutch" customModuleProvider="target">
                                 <rect key="frame" x="35" y="194" width="250" height="150"/>
-                                <color key="backgroundColor" red="0.62877142429351807" green="0.92157906293869019" blue="0.85606092214584351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.86203926279999998" green="0.86203926279999998" blue="0.86203926279999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="QU2-Gs-Azp"/>
                                     <constraint firstAttribute="height" constant="150" id="VGf-IZ-Bqx"/>
@@ -1124,6 +1152,7 @@
                         <outlet property="money7" destination="w0r-Iv-tLd" id="T9J-hu-3G9"/>
                         <outlet property="money8" destination="gSf-AQ-YvO" id="8kI-56-imA"/>
                         <outlet property="money9" destination="P7u-SD-ufY" id="0c7-lf-dpz"/>
+                        <outlet property="moreThanOneSubview" destination="4lL-4I-wae" id="3sN-UC-Qzy"/>
                         <outlet property="myTotal" destination="qTC-2x-GcV" id="R6V-f2-nqF"/>
                         <outlet property="number1" destination="UlN-4o-hiB" id="aie-VY-yiJ"/>
                         <outlet property="number10" destination="tgp-mZ-MjH" id="CrK-pz-s70"/>
