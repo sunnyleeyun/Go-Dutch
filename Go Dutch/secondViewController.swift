@@ -10,6 +10,7 @@ import UIKit
 
 class secondViewController: UIViewController {
     
+    // var of "money amount"
     @IBOutlet weak var money1: UITextField!
     @IBOutlet weak var money2: UITextField!
     @IBOutlet weak var money3: UITextField!
@@ -21,7 +22,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var money9: UITextField!
     @IBOutlet weak var money10: UITextField!
  
-    
+    // var of "count of the A La Carte"
     @IBOutlet weak var number1: UITextField!
     @IBOutlet weak var number2: UITextField!
     @IBOutlet weak var number3: UITextField!
@@ -33,7 +34,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var number9: UITextField!
     @IBOutlet weak var number10: UITextField!
     
-    
+    // var of "whole stack of 1~10" --- for hidden the stack due to the 1st VC, kinds of A La Carte
     @IBOutlet weak var stack1: UIStackView!
     @IBOutlet weak var stack2: UIStackView!
     @IBOutlet weak var stack3: UIStackView!
@@ -45,7 +46,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var stack9: UIStackView!
     @IBOutlet weak var stack10: UIStackView!
     
-    
+    // var of "button of check boxes"
     @IBOutlet weak var check1: CheckBox!
     @IBOutlet weak var check2: CheckBox!
     @IBOutlet weak var check3: CheckBox!
@@ -57,49 +58,36 @@ class secondViewController: UIViewController {
     @IBOutlet weak var check9: CheckBox!
     @IBOutlet weak var check10: CheckBox!
     
-    
+    // var of "subview"
     @IBOutlet weak var moreThanOneSubview: MoreThanOne!
     
-    
+    // segue from the two view controllers
     @IBOutlet weak var TextBill: UILabel!
     var TextBillAmount = String()
     @IBOutlet weak var TextPeople: UILabel!
     var TextPeopleAmount = String()
     @IBOutlet weak var TextPublic: UILabel!
     var TextPublicAmount = String()
-    
-    
-    
     @IBOutlet weak var labeltest: UILabel!
     var LabelText = String()
     
     
-    
+    // var of "total amount of 'all' A La Carte && total amount of 'my' A La Carte" --[not clarify yet]
     @IBOutlet weak var totaltotal: UILabel!
-    
     @IBOutlet weak var myTotal: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         usingDictionary()
         labeltest.text = LabelText
         TextBill.text = TextBillAmount
         TextPeople.text = TextPeopleAmount
         TextPublic.text = TextPublicAmount
-        //
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    //////////
-    
-    
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -114,19 +102,30 @@ class secondViewController: UIViewController {
     
     
     
+    // view hide button
+    func myHideButtonTapped(sender:UIButton){
+        moreThanOneSubview.removeFromSuperview()
+    }
+    //checkboxes for subview
     @IBAction func check1(sender: CheckBox) {
         if let num1 = number1!.text {
             if Int(num1) >= 2 && check1.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            if moreThanOneSubview != nil && !moreThanOneSubview.hidden {
+                moreThanOneSubview.removeFromSuperview()
+            }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
-    
     @IBAction func check2(sender: CheckBox) {
         if let num2 = number2!.text {
             if Int(num2) >= 2 && check2.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check3(sender: CheckBox) {
@@ -134,6 +133,8 @@ class secondViewController: UIViewController {
             if Int(num3) >= 2 && check3.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check4(sender: CheckBox) {
@@ -141,6 +142,8 @@ class secondViewController: UIViewController {
             if Int(num4) >= 2 && check4.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check5(sender: CheckBox) {
@@ -148,6 +151,8 @@ class secondViewController: UIViewController {
             if Int(num5) >= 2 && check5.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check6(sender: CheckBox) {
@@ -155,6 +160,8 @@ class secondViewController: UIViewController {
             if Int(num6) >= 2 && check6.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check7(sender: CheckBox) {
@@ -162,6 +169,8 @@ class secondViewController: UIViewController {
             if Int(num7) >= 2 && check7.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check8(sender: CheckBox) {
@@ -169,6 +178,8 @@ class secondViewController: UIViewController {
             if Int(num8) >= 2 && check8.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check9(sender: CheckBox) {
@@ -176,6 +187,8 @@ class secondViewController: UIViewController {
             if Int(num9) >= 2 && check9.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     @IBAction func check10(sender: CheckBox) {
@@ -183,6 +196,8 @@ class secondViewController: UIViewController {
             if Int(num10) >= 2 && check10.isChecked == false {
                 moreThanOneSubview.hidden = false
             }
+            moreThanOneSubview.confirmBack.addTarget(self, action: "myHiddenButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(moreThanOneSubview)
         }
     }
     
@@ -271,24 +286,13 @@ class secondViewController: UIViewController {
             }
         }
     }
-
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
+
+
+
+
+//////// checkbox code ////////// useful!!!
 class CheckBox: UIButton {
     // Images
     let checkedImage = UIImage(named: "checkbox")! as UIImage
@@ -299,21 +303,15 @@ class CheckBox: UIButton {
         didSet{
             if isChecked == true {
                 self.setImage(checkedImage, forState: .Normal)
-                
-                
-                
-                
             } else {
                 self.setImage(uncheckedImage, forState: .Normal)
             }
         }
     }
-    
     override func awakeFromNib() {
         self.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
         self.isChecked = false
     }
-    
     func buttonClicked(sender: UIButton) {
         if sender == self {
             isChecked = !isChecked

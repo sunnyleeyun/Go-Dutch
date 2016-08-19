@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreThanOne" customModule="Go_Dutch" customModuleProvider="target">
             <connections>
+                <outlet property="confirmBack" destination="BKA-Bn-iCn" id="Cxg-eS-GpK"/>
+                <outlet property="numberOfAddition" destination="42B-vB-lpQ" id="l89-Kp-97k"/>
                 <outlet property="view" destination="iN0-l3-epB" id="424-Rz-R4u"/>
             </connections>
         </placeholder>
@@ -27,15 +29,19 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42B-vB-lpQ">
-                    <rect key="frame" x="44" y="74" width="97" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-Bn-iCn">
                     <rect key="frame" x="95" y="112" width="75" height="30"/>
                     <state key="normal" title="確定並返回"/>
+                    <connections>
+                        <action selector="confirmAndBack:" destination="-1" eventType="touchUpInside" id="bfa-6m-RmP"/>
+                    </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42B-vB-lpQ">
+                    <rect key="frame" x="68" y="74" width="71" height="30"/>
+                    <color key="textColor" red="0.17016281084327955" green="0.25465976035467552" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="0.76358664621559036" green="1" blue="0.88488968080247909" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

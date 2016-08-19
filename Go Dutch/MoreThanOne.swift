@@ -9,6 +9,15 @@
 import UIKit
 
 class MoreThanOne: UIView {
+    @IBOutlet weak var numberOfAddition: UITextField!
+    
+    
+    @IBOutlet weak var confirmBack: UIButton!
+    @IBAction func confirmAndBack(sender: AnyObject) {
+        if let personalAddition = Int(numberOfAddition.text!) {
+            
+        }
+    }
 
     @IBOutlet var view: UIView!
     
