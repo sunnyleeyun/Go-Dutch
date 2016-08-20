@@ -58,8 +58,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //setInitialValue()
-        
         sumOfTotalALa.text = textSumOfTotalALa
         myALa.text = textMyALa
 
@@ -68,13 +66,6 @@ class ViewController: UIViewController {
         billAmountField.text = textBillAmount
         peopleAmountField.text = textPepopleAmount
         publicAmountField.text = textPublicAmount
-        
-        
-      
-        
-     
-        // Do any additional setup after loading the view, typically from a nib
-        
     }
     
     override func didReceiveMemoryWarning() {

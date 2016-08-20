@@ -1101,6 +1101,42 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5at-fw-wc1"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-am-jl0" userLabel="IfMoreThanOneView">
+                                <rect key="frame" x="40" y="395" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 有兩個以上此加點，請問" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPg-IR-pIH">
+                                        <rect key="frame" x="8" y="18" width="224" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-68-NDh">
+                                        <rect key="frame" x="199" y="47" width="17" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76i-Le-hrh">
+                                        <rect key="frame" x="83" y="81" width="75" height="30"/>
+                                        <state key="normal" title="確定並返回"/>
+                                        <connections>
+                                            <action selector="buttonIfMoreThanOne:" destination="tk1-X1-N1F" eventType="touchUpInside" id="fER-DG-4c8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您的加點有" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD9-wX-OXb">
+                                        <rect key="frame" x="28" y="47" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-sb-4zs">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2133113270312248" green="1" blue="0.74238804055046415" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1128,6 +1164,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="IfMoreThanOne" destination="aW7-am-jl0" id="Yhp-Pu-7Le"/>
                         <outlet property="TextBill" destination="TeB-ei-nbK" id="UoZ-bJ-j18"/>
                         <outlet property="TextPeople" destination="b2x-kG-Fin" id="7fX-mf-wLv"/>
                         <outlet property="TextPublic" destination="Stt-zK-x92" id="i20-MR-zLy"/>
@@ -1152,7 +1189,6 @@
                         <outlet property="money7" destination="w0r-Iv-tLd" id="T9J-hu-3G9"/>
                         <outlet property="money8" destination="gSf-AQ-YvO" id="8kI-56-imA"/>
                         <outlet property="money9" destination="P7u-SD-ufY" id="0c7-lf-dpz"/>
-                        <outlet property="moreThanOneSubview" destination="4lL-4I-wae" id="3sN-UC-Qzy"/>
                         <outlet property="myTotal" destination="qTC-2x-GcV" id="R6V-f2-nqF"/>
                         <outlet property="number1" destination="UlN-4o-hiB" id="aie-VY-yiJ"/>
                         <outlet property="number10" destination="tgp-mZ-MjH" id="CrK-pz-s70"/>
@@ -1164,6 +1200,7 @@
                         <outlet property="number7" destination="KCa-5c-e2b" id="8TO-La-goI"/>
                         <outlet property="number8" destination="zjk-1b-lHg" id="FC4-KV-zmh"/>
                         <outlet property="number9" destination="fhE-ix-1Rx" id="kEM-JL-9Wt"/>
+                        <outlet property="numberIfMoreThanOne" destination="hYK-sb-4zs" id="4cc-Th-Apu"/>
                         <outlet property="stack1" destination="Zpj-VP-7rZ" id="Ty6-Js-5H7"/>
                         <outlet property="stack10" destination="S4z-Nc-Vcn" id="MNF-Ch-jAg"/>
                         <outlet property="stack2" destination="JJa-dl-v1B" id="c4h-Dt-Eou"/>
