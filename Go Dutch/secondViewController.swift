@@ -102,7 +102,12 @@ class secondViewController: UIViewController {
     @IBOutlet weak var numberIfMoreThanOne: UITextField!
     @IBAction func buttonIfMoreThanOne(sender: UIButton) {
         IfMoreThanOne.hidden = true
+        if numberIfMoreThanOne != nil {
+            myDishes1.text = numberIfMoreThanOne.text!
+        }
     }
+    @IBOutlet weak var myDishes1: UILabel!
+    
     
     //checkboxes for subview "IfMoreThanOne"
     @IBAction func check1(sender: CheckBox) {
@@ -201,45 +206,47 @@ class secondViewController: UIViewController {
                             test = iindex1 * iindex2
                             totalSum += test
                         
-                        if check1.isChecked == true && iindex == 1 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check2.isChecked == true && iindex == 2 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check3.isChecked == true && iindex == 3 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check4.isChecked == true && iindex == 4 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check5.isChecked == true && iindex == 5 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check6.isChecked == true && iindex == 6 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check7.isChecked == true && iindex == 7 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check8.isChecked == true && iindex == 8 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check9.isChecked == true && iindex == 9 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                        }
-                        else if check10.isChecked == true && iindex == 10 {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
+                        if let numOfMyTotal = Int(numberIfMoreThanOne.text!) {
+                            if check1.isChecked == true && iindex == 1 {
+                                myTest = iindex1 * numOfMyTotal
+                                myTotalSum += myTest
+                            }
+                            else if check2.isChecked == true && iindex == 2 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check3.isChecked == true && iindex == 3 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check4.isChecked == true && iindex == 4 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check5.isChecked == true && iindex == 5 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check6.isChecked == true && iindex == 6 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check7.isChecked == true && iindex == 7 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check8.isChecked == true && iindex == 8 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check9.isChecked == true && iindex == 9 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
+                            else if check10.isChecked == true && iindex == 10 {
+                                myTest = iindex1 * iindex2
+                                myTotalSum += myTest
+                            }
                         }
                     }
                 }

@@ -262,14 +262,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lL-4I-wae" customClass="MoreThanOne" customModule="Go_Dutch" customModuleProvider="target">
-                                <rect key="frame" x="35" y="194" width="250" height="150"/>
-                                <color key="backgroundColor" red="0.46520365937814651" green="0.84156943398059036" blue="0.86203926279999998" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="QU2-Gs-Azp"/>
-                                    <constraint firstAttribute="height" constant="150" id="VGf-IZ-Bqx"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="52U-zt-rac" userLabel="Super Stack View">
                                 <rect key="frame" x="10" y="88" width="320" height="327"/>
                                 <subviews>
@@ -1101,8 +1093,8 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="5at-fw-wc1"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-am-jl0" userLabel="IfMoreThanOneView">
-                                <rect key="frame" x="40" y="395" width="240" height="128"/>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-am-jl0" userLabel="IfMoreThanOneView">
+                                <rect key="frame" x="40" y="175" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 有兩個以上此加點，請問" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPg-IR-pIH">
                                         <rect key="frame" x="8" y="18" width="224" height="21"/>
@@ -1137,6 +1129,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.2133113270312248" green="1" blue="0.74238804055046415" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMe-Hj-lIX">
+                                <rect key="frame" x="269" y="436" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1144,17 +1142,13 @@
                             <constraint firstItem="WxQ-20-udQ" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" id="2eG-66-4LE"/>
                             <constraint firstAttribute="trailing" secondItem="gRo-jA-VtP" secondAttribute="trailing" constant="10" id="5Lb-QG-0EB"/>
                             <constraint firstItem="52U-zt-rac" firstAttribute="top" secondItem="WxQ-20-udQ" secondAttribute="bottom" constant="20" id="9kW-WO-BcB"/>
-                            <constraint firstItem="4lL-4I-wae" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" constant="35" id="AUR-t6-uZB"/>
                             <constraint firstItem="NGc-qU-roA" firstAttribute="top" secondItem="buq-ua-pQn" secondAttribute="top" id="EFP-Qp-sXC"/>
-                            <constraint firstAttribute="trailing" secondItem="4lL-4I-wae" secondAttribute="trailing" constant="35" id="Exh-8p-LSg"/>
                             <constraint firstItem="XtE-Gp-MbN" firstAttribute="top" secondItem="XR5-6v-tWT" secondAttribute="bottom" constant="30" id="F8r-j2-5PR"/>
-                            <constraint firstItem="XR5-6v-tWT" firstAttribute="top" secondItem="4lL-4I-wae" secondAttribute="bottom" constant="98" id="FfB-OS-fNT"/>
                             <constraint firstItem="XtE-Gp-MbN" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leadingMargin" constant="80" id="Fse-dm-jAK"/>
                             <constraint firstItem="7nX-As-I4L" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" constant="10" id="Gfu-vk-zaV"/>
                             <constraint firstItem="XtE-Gp-MbN" firstAttribute="centerX" secondItem="52U-zt-rac" secondAttribute="centerX" id="Hg2-Dt-8pS"/>
                             <constraint firstAttribute="bottom" secondItem="XtE-Gp-MbN" secondAttribute="bottom" constant="20" symbolic="YES" id="MT9-Cc-z9c"/>
                             <constraint firstAttribute="trailing" secondItem="WxQ-20-udQ" secondAttribute="trailing" id="UmS-ZA-vx3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4lL-4I-wae" secondAttribute="trailing" constant="50" id="YvO-bE-ejR"/>
                             <constraint firstItem="52U-zt-rac" firstAttribute="leading" secondItem="buq-ua-pQn" secondAttribute="leading" id="bfA-et-caj"/>
                             <constraint firstItem="XR5-6v-tWT" firstAttribute="centerX" secondItem="XtE-Gp-MbN" secondAttribute="centerX" id="kDd-RS-D6B"/>
                             <constraint firstItem="WxQ-20-udQ" firstAttribute="top" secondItem="bgL-5F-zvN" secondAttribute="bottom" id="mvl-dp-nHA"/>
@@ -1189,6 +1183,7 @@
                         <outlet property="money7" destination="w0r-Iv-tLd" id="T9J-hu-3G9"/>
                         <outlet property="money8" destination="gSf-AQ-YvO" id="8kI-56-imA"/>
                         <outlet property="money9" destination="P7u-SD-ufY" id="0c7-lf-dpz"/>
+                        <outlet property="myDishes1" destination="OMe-Hj-lIX" id="WOX-ew-aZG"/>
                         <outlet property="myTotal" destination="qTC-2x-GcV" id="R6V-f2-nqF"/>
                         <outlet property="number1" destination="UlN-4o-hiB" id="aie-VY-yiJ"/>
                         <outlet property="number10" destination="tgp-mZ-MjH" id="CrK-pz-s70"/>
