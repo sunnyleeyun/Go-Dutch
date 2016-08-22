@@ -1121,9 +1121,10 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-sb-4zs">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-sb-4zs">
                                         <rect key="frame" x="128" y="43" width="59" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -1162,6 +1163,7 @@
                         <outlet property="TextBill" destination="TeB-ei-nbK" id="UoZ-bJ-j18"/>
                         <outlet property="TextPeople" destination="b2x-kG-Fin" id="7fX-mf-wLv"/>
                         <outlet property="TextPublic" destination="Stt-zK-x92" id="i20-MR-zLy"/>
+                        <outlet property="buttonUpdateIfMoreThanOne" destination="76i-Le-hrh" id="nov-b5-r9K"/>
                         <outlet property="check1" destination="irj-gy-fLz" id="ESS-JU-SkJ"/>
                         <outlet property="check10" destination="n1o-1c-hci" id="vaU-ks-0pq"/>
                         <outlet property="check2" destination="RbH-xT-9ej" id="ahA-b6-v8R"/>

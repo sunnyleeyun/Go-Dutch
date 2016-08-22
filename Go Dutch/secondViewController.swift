@@ -81,7 +81,8 @@ class secondViewController: UIViewController {
         TextPeople.text = TextPeopleAmount
         TextPublic.text = TextPublicAmount
     }
-
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -100,6 +101,7 @@ class secondViewController: UIViewController {
     
     @IBOutlet weak var IfMoreThanOne: UIView!
     @IBOutlet weak var numberIfMoreThanOne: UITextField!
+    @IBOutlet weak var buttonUpdateIfMoreThanOne: UIButton!
     @IBAction func buttonIfMoreThanOne(sender: UIButton) {
         IfMoreThanOne.hidden = true
         if numberIfMoreThanOne != nil {
@@ -107,7 +109,6 @@ class secondViewController: UIViewController {
         }
     }
     @IBOutlet weak var myDishes1: UILabel!
-    
     
     //checkboxes for subview "IfMoreThanOne"
     @IBAction func check1(sender: CheckBox) {
@@ -197,21 +198,19 @@ class secondViewController: UIViewController {
         
         
         
-        if let counter = Int(LabelText){
-            for iindex in 1...10 {
-                if let iindex1 = Int(totalDiction1[iindex]!.text!){
-                    if let iindex2 = Int(totalDiction2[iindex]!.text!){
-                        
-
-                            test = iindex1 * iindex2
-                            totalSum += test
+        for iindex in 1...10 {
+            if let iindex1 = Int(totalDiction1[iindex]!.text!){
+                if let iindex2 = Int(totalDiction2[iindex]!.text!){
+                    var numberIfMoreThanOneInt : Int = Int(numberIfMoreThanOne.text!)!
+                        test = iindex1 * iindex2
+                        totalSum += test
                         
                             if check1.isChecked == true && iindex == 1 {
-                                myTest = iindex1 * iindex2
+                                myTest = iindex1 * numberIfMoreThanOneInt
                                 myTotalSum += myTest
                             }
                             else if check2.isChecked == true && iindex == 2 {
-                                myTest = iindex1 * iindex2
+                                myTest = iindex1 * numberIfMoreThanOneInt
                                 myTotalSum += myTest
                             }
                             else if check3.isChecked == true && iindex == 3 {
@@ -246,11 +245,10 @@ class secondViewController: UIViewController {
                                 myTest = iindex1 * iindex2
                                 myTotalSum += myTest
                             }
-                        
+                    
                     }
                 }
             }
-        }
         totaltotal.text = (String)(totalSum)
         myTotal.text = (String)(myTotalSum)
     }
