@@ -97,13 +97,29 @@ class secondViewController: UIViewController {
         DestViewController.textSumOfTotalALa = totaltotal.text!
         DestViewController.textNumberOfSlider = labeltest.text!
     }
- 
     
     
-    //   var numberIfMoreThanOneInt : Int = Int(numberIfMoreThanOne.text!)!
+    func usingDictionary(){
+        var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10]
+        if let counter = Int(LabelText){ //viewcontroller多少就多少
+            for index in 1...10{//因為diction有10個
+                if let stackIndex = diction[index]{//stack[index] = stack[1~10]
+                    if counter < index {
+                        stackIndex.hidden = true
+                    }
+                }
+            }
+        }
+    }
 
     
+    
+
+    //"subview"
     @IBOutlet weak var IfMoreThanOne: UIView!
+    
+    
+    //"text" of subview- 10 of the number for my own dishes
     @IBOutlet weak var NIMONE1: UITextField!
     @IBOutlet weak var NIMONE2: UITextField!
     @IBOutlet weak var NIMONE3: UITextField!
@@ -116,10 +132,12 @@ class secondViewController: UIViewController {
     @IBOutlet weak var NIMONE10: UITextField!
     
     
+    //"button of subview"- confirm and back to second viewcontroller
     @IBOutlet weak var buttonUpdateIfMoreThanOne: UIButton!
     @IBAction func buttonIfMoreThanOne(sender: UIButton) {
         IfMoreThanOne.hidden = true
     }
+    
     
     //checkboxes for subview "IfMoreThanOne"
     @IBAction func check1(sender: CheckBox) {
@@ -297,13 +315,19 @@ class secondViewController: UIViewController {
     
     
     @IBAction func addition(sender: UIButton) {
+        //totalDiciton1 -> the amount of money of each dishes
         var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10]
+        
+        //totalDiction2 -> the number of each dishes
         var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10]
+        
+        //totalDiction3 -> the checkboxes
         var totalDiction3 = [1: check1, 2: check2, 3: check3, 4: check4, 5: check5, 6: check6, 7: check7, 8: check8, 9: check9, 10: check10]
+        
+        //totalDictionaryOfNumber -> the "text" in subview for number of each dishes
         var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
-
-       
-        //var numberIfMoreThanOneInt : Int = Int(NIMONE1.text!)!
+        
+        //"var" for the initials
         var totalSum = 0
         var test = 0
         var myTotalSum1 = 0
@@ -311,7 +335,7 @@ class secondViewController: UIViewController {
         var myTotalSum2 = 0
         var myTest2 = 0
         
-        
+        //Calculation!!!
         for iindex in 1...10 { //總共10次
             if let iindex1 = Int(totalDiction1[iindex]!.text!){//如果iindex1(價格) != nil
                 if let iindex2 = Int(totalDiction2[iindex]!.text!){//如果iindex2(數量) != nil
@@ -333,23 +357,13 @@ class secondViewController: UIViewController {
                 }
             }
         }
-        totaltotal.text = String(totalSum)
-        myTotal.text = String(myTotalSum1 + myTotalSum2)
+        // the sum of all dishes && the sum of individual dishes
+        totaltotal.text = String(totalSum) //all
+        myTotal.text = String(myTotalSum1 + myTotalSum2) //individual
     }
     
-    func usingDictionary(){
-        var diction = [1: stack1, 2: stack2, 3: stack3, 4: stack4, 5: stack5, 6: stack6, 7: stack7, 8: stack8, 9: stack9, 10: stack10]
-        if let counter = Int(LabelText){ //viewcontroller多少就多少
-            for index in 1...10{//因為diction有10個
-                if let stackIndex = diction[index]{//stack[index] = stack[1~10]
-                    if counter < index {
-                        stackIndex.hidden = true
-                    }
-                }
-            }
-        }
-    }
-}
+    
+}//end of Class secondviewcontroller
 
 
 

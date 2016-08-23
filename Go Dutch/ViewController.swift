@@ -102,9 +102,9 @@ class ViewController: UIViewController {
                 
                 if let publicRealMoney = Double(publicAmountField.text!){
                     
-                    if let totalALA = Double(sumOfTotalALa.text!){
+                    if let totaltotal = Double(sumOfTotalALa.text!){
                         
-                        if let totaltotal = Double(myALa.text!){
+                        if let totalALA = Double(myALa.text!){
                     
                 //calculate
                 var serviceChargeOrNot = 0.0
@@ -121,7 +121,6 @@ class ViewController: UIViewController {
                     break
                 }
                 
-                myMoneyField.text = ""
                 
                     
                 
@@ -131,9 +130,10 @@ class ViewController: UIViewController {
                 let serviceChargeAmount = roundedBillAmount * serviceChargeOrNot
                 let totaltotalIncludeServ = totaltotal + totaltotal * serviceChargeOrNot
                 let totalALAIncludeServ = totalALA + totalALA * serviceChargeOrNot
-                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totalALAIncludeServ)/peopleAmount+totaltotalIncludeServ
+                let myRealAmount = (roundedBillAmount+serviceChargeAmount-publicRealMoney-totaltotalIncludeServ)/peopleAmount+totalALAIncludeServ
                 
-
+                myMoneyField.text = ""
+                
                 if (!billAmountField.editing) && (!peopleAmountField.editing) {
                     billAmountField.text = String(format: "%.0f", roundedBillAmount)
                     peopleAmountField.text = String(format: "%.0f", peopleAmount)
