@@ -1121,7 +1121,61 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-sb-4zs">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-sb-4zs" userLabel="NIMONE1">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kql-Wr-KGu" userLabel="NIMONE2">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ql-k9-m7q" userLabel="NIMONE3">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfq-85-Noh" userLabel="NIMONE4">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPi-8k-Je2" userLabel="NIMONE5">
+                                        <rect key="frame" x="129" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sub-d4-cjw" userLabel="NIMONE6">
+                                        <rect key="frame" x="129" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCi-pE-Lm3" userLabel="NIMONE7">
+                                        <rect key="frame" x="129" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UTc-DO-gAR" userLabel="NIMONE8">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-8b-mwk" userLabel="NIMONE9">
+                                        <rect key="frame" x="128" y="43" width="59" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnT-al-azg" userLabel="NIMONE10">
                                         <rect key="frame" x="128" y="43" width="59" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1130,12 +1184,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.2133113270312248" green="1" blue="0.74238804055046415" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMe-Hj-lIX">
-                                <rect key="frame" x="269" y="436" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1160,10 +1208,20 @@
                     </view>
                     <connections>
                         <outlet property="IfMoreThanOne" destination="aW7-am-jl0" id="Yhp-Pu-7Le"/>
+                        <outlet property="NIMONE1" destination="hYK-sb-4zs" id="8oq-rN-5fr"/>
+                        <outlet property="NIMONE10" destination="wnT-al-azg" id="teH-dg-FIL"/>
+                        <outlet property="NIMONE2" destination="Kql-Wr-KGu" id="Mld-3v-rzz"/>
+                        <outlet property="NIMONE3" destination="5Ql-k9-m7q" id="L1p-og-nO7"/>
+                        <outlet property="NIMONE4" destination="sfq-85-Noh" id="ajQ-AD-c1Y"/>
+                        <outlet property="NIMONE5" destination="XPi-8k-Je2" id="fCb-pf-XXn"/>
+                        <outlet property="NIMONE6" destination="Sub-d4-cjw" id="Bp4-Qt-Z8t"/>
+                        <outlet property="NIMONE7" destination="uCi-pE-Lm3" id="rFg-hL-iLh"/>
+                        <outlet property="NIMONE8" destination="UTc-DO-gAR" id="xgx-S8-LN9"/>
+                        <outlet property="NIMONE9" destination="bzs-8b-mwk" id="8We-xf-AGg"/>
                         <outlet property="TextBill" destination="TeB-ei-nbK" id="UoZ-bJ-j18"/>
                         <outlet property="TextPeople" destination="b2x-kG-Fin" id="7fX-mf-wLv"/>
                         <outlet property="TextPublic" destination="Stt-zK-x92" id="i20-MR-zLy"/>
-                        <outlet property="buttonUpdateIfMoreThanOne" destination="76i-Le-hrh" id="nov-b5-r9K"/>
+                        <outlet property="buttonUpdateIfMoreThanOne" destination="76i-Le-hrh" id="elh-rO-e4l"/>
                         <outlet property="check1" destination="irj-gy-fLz" id="ESS-JU-SkJ"/>
                         <outlet property="check10" destination="n1o-1c-hci" id="vaU-ks-0pq"/>
                         <outlet property="check2" destination="RbH-xT-9ej" id="ahA-b6-v8R"/>
@@ -1185,7 +1243,6 @@
                         <outlet property="money7" destination="w0r-Iv-tLd" id="T9J-hu-3G9"/>
                         <outlet property="money8" destination="gSf-AQ-YvO" id="8kI-56-imA"/>
                         <outlet property="money9" destination="P7u-SD-ufY" id="0c7-lf-dpz"/>
-                        <outlet property="myDishes1" destination="OMe-Hj-lIX" id="WOX-ew-aZG"/>
                         <outlet property="myTotal" destination="qTC-2x-GcV" id="R6V-f2-nqF"/>
                         <outlet property="number1" destination="UlN-4o-hiB" id="aie-VY-yiJ"/>
                         <outlet property="number10" destination="tgp-mZ-MjH" id="CrK-pz-s70"/>
@@ -1197,7 +1254,6 @@
                         <outlet property="number7" destination="KCa-5c-e2b" id="8TO-La-goI"/>
                         <outlet property="number8" destination="zjk-1b-lHg" id="FC4-KV-zmh"/>
                         <outlet property="number9" destination="fhE-ix-1Rx" id="kEM-JL-9Wt"/>
-                        <outlet property="numberIfMoreThanOne" destination="hYK-sb-4zs" id="4cc-Th-Apu"/>
                         <outlet property="stack1" destination="Zpj-VP-7rZ" id="Ty6-Js-5H7"/>
                         <outlet property="stack10" destination="S4z-Nc-Vcn" id="MNF-Ch-jAg"/>
                         <outlet property="stack2" destination="JJa-dl-v1B" id="c4h-Dt-Eou"/>

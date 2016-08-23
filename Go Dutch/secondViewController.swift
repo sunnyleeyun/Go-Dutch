@@ -97,88 +97,198 @@ class secondViewController: UIViewController {
         DestViewController.textSumOfTotalALa = totaltotal.text!
         DestViewController.textNumberOfSlider = labeltest.text!
     }
+ 
     
+    
+    //   var numberIfMoreThanOneInt : Int = Int(numberIfMoreThanOne.text!)!
+
     
     @IBOutlet weak var IfMoreThanOne: UIView!
-    @IBOutlet weak var numberIfMoreThanOne: UITextField!
+    @IBOutlet weak var NIMONE1: UITextField!
+    @IBOutlet weak var NIMONE2: UITextField!
+    @IBOutlet weak var NIMONE3: UITextField!
+    @IBOutlet weak var NIMONE4: UITextField!
+    @IBOutlet weak var NIMONE5: UITextField!
+    @IBOutlet weak var NIMONE6: UITextField!
+    @IBOutlet weak var NIMONE7: UITextField!
+    @IBOutlet weak var NIMONE8: UITextField!
+    @IBOutlet weak var NIMONE9: UITextField!
+    @IBOutlet weak var NIMONE10: UITextField!
+    
+    
     @IBOutlet weak var buttonUpdateIfMoreThanOne: UIButton!
     @IBAction func buttonIfMoreThanOne(sender: UIButton) {
-        var numberIfMoreThanOneInt : Int = Int(numberIfMoreThanOne.text!)!
         IfMoreThanOne.hidden = true
-        if numberIfMoreThanOne != nil && numberIfMoreThanOneInt >= 2 {
-            myDishes1.text = numberIfMoreThanOne.text!
-        }
     }
-    @IBOutlet weak var myDishes1: UILabel!
     
     //checkboxes for subview "IfMoreThanOne"
     @IBAction func check1(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num1 = number1!.text {
             if Int(num1) >= 2 && check1.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE1 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check2(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num2 = number2!.text {
             if Int(num2) >= 2 && check2.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE2 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check3(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num3 = number3!.text {
             if Int(num3) >= 2 && check3.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE3 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check4(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num4 = number4!.text {
             if Int(num4) >= 2 && check4.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE4 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check5(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num5 = number5!.text {
             if Int(num5) >= 2 && check5.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE5 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check6(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num6 = number6!.text {
             if Int(num6) >= 2 && check6.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE6 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check7(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num7 = number7!.text {
             if Int(num7) >= 2 && check7.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE7 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check8(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num8 = number8!.text {
             if Int(num8) >= 2 && check8.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE8 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check9(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num9 = number9!.text {
             if Int(num9) >= 2 && check9.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE9 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
     @IBAction func check10(sender: CheckBox) {
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
         if let num10 = number10!.text {
             if Int(num10) >= 2 && check10.isChecked == false {
                 IfMoreThanOne.hidden = false
+                for indexer in 1...10 {
+                    if let checkOneNum = totalDictionaryOfNumber[indexer]{
+                        if checkOneNum == NIMONE10 {
+                            checkOneNum.hidden = false
+                        } else {
+                            checkOneNum.hidden = true
+                        }
+                    }
+                }
             }
         }
     }
@@ -190,72 +300,41 @@ class secondViewController: UIViewController {
         var totalDiction1 = [1: money1, 2: money2, 3: money3, 4: money4, 5: money5, 6: money6, 7: money7, 8: money8, 9: money9, 10: money10]
         var totalDiction2 = [1: number1, 2: number2, 3: number3, 4: number4, 5: number5, 6: number6, 7: number7, 8: number8, 9: number9, 10: number10]
         var totalDiction3 = [1: check1, 2: check2, 3: check3, 4: check4, 5: check5, 6: check6, 7: check7, 8: check8, 9: check9, 10: check10]
+        var totalDictionaryOfNumber = [1: NIMONE1, 2: NIMONE2, 3: NIMONE3, 4: NIMONE4, 5: NIMONE5, 6: NIMONE6, 7: NIMONE7, 8: NIMONE8, 9: NIMONE9, 10: NIMONE10]
+
        
-        var numberIfMoreThanOneInt : Int = Int(numberIfMoreThanOne.text!)!
+        //var numberIfMoreThanOneInt : Int = Int(NIMONE1.text!)!
         var totalSum = 0
         var test = 0
-        var myTotalSum = 0
-        var myTest = 0
+        var myTotalSum1 = 0
+        var myTest1 = 0
+        var myTotalSum2 = 0
+        var myTest2 = 0
         
         
-        for iindex in 1...10 {
-            if let iindex1 = Int(totalDiction1[iindex]!.text!){
-                if let iindex2 = Int(totalDiction2[iindex]!.text!){
-                        test = iindex1 * iindex2
-                        totalSum += test
-                    if let iindex3 = totalDiction3[iindex]!  {
-                        if iindex3.isChecked {
-                            myTest = iindex1 * iindex2
-                            myTotalSum += myTest
-                            /*
-                            if check1.isChecked == true && iindex == 1 {
-                                myTest = iindex1 * numberIfMoreThanOneInt
-                                myTotalSum += myTest
+        for iindex in 1...10 { //總共10次
+            if let iindex1 = Int(totalDiction1[iindex]!.text!){//如果iindex1(價格) != nil
+                if let iindex2 = Int(totalDiction2[iindex]!.text!){//如果iindex2(數量) != nil
+                        test = iindex1 * iindex2 //加點單項金額
+                        totalSum += test //加點總和
+                    if let iindex3 = totalDiction3[iindex]!{ //如果iindex3(勾勾) != nil
+                        if iindex3.isChecked { //勾勾.ischecked
+                            if let iindex4 = totalDictionaryOfNumber[iindex]!{//如果iindex4(個人單點數量) != nil
+                                if iindex2 >= 2 { //如果iindex2(數量) >= 2
+                                    myTest1 = iindex1 * Int(iindex4.text!)!
+                                    myTotalSum1 += myTest1
+                                } else if iindex2 == 1 { //如果iindex2(數量) = 1
+                                    myTest2 = iindex1 * iindex2 //iindex1(金額)*iindex2(數量=1)
+                                    myTotalSum2 += myTest2
+                                }
                             }
-                            else if check2.isChecked == true && iindex == 2 {
-                                myTest = iindex1 * numberIfMoreThanOneInt
-                                myTotalSum += myTest
-                            }
-                            else if check3.isChecked == true && iindex == 3 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check4.isChecked == true && iindex == 4 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check5.isChecked == true && iindex == 5 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check6.isChecked == true && iindex == 6 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check7.isChecked == true && iindex == 7 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check8.isChecked == true && iindex == 8 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check9.isChecked == true && iindex == 9 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            else if check10.isChecked == true && iindex == 10 {
-                                myTest = iindex1 * iindex2
-                                myTotalSum += myTest
-                            }
-                            */
                         }
                     }
                 }
             }
         }
-        totaltotal.text = (String)(totalSum)
-        myTotal.text = (String)(myTotalSum)
+        totaltotal.text = String(totalSum)
+        myTotal.text = String(myTotalSum1 + myTotalSum2)
     }
     
     func usingDictionary(){
