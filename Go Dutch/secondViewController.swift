@@ -10,6 +10,19 @@ import UIKit
 
 class secondViewController: UIViewController {
     
+    //name
+    @IBOutlet weak var name1: UITextField!
+    @IBOutlet weak var name2: UITextField!
+    @IBOutlet weak var name3: UITextField!
+    @IBOutlet weak var name4: UITextField!
+    @IBOutlet weak var name5: UITextField!
+    @IBOutlet weak var name6: UITextField!
+    @IBOutlet weak var name7: UITextField!
+    @IBOutlet weak var name8: UITextField!
+    @IBOutlet weak var name9: UITextField!
+    @IBOutlet weak var name10: UITextField!
+    
+    
     // var of "money amount"
     @IBOutlet weak var money1: UITextField!
     @IBOutlet weak var money2: UITextField!
@@ -33,6 +46,10 @@ class secondViewController: UIViewController {
     @IBOutlet weak var number8: UITextField!
     @IBOutlet weak var number9: UITextField!
     @IBOutlet weak var number10: UITextField!
+    
+    //the whole stack
+    @IBOutlet weak var superStackView: UIStackView!
+    
     
     // var of "whole stack of 1~10" --- for hidden the stack due to the 1st VC, kinds of A La Carte
     @IBOutlet weak var stack1: UIStackView!
@@ -76,6 +93,7 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         usingDictionary()
+        self.hideKeyboardWhenTappedAround()
         labeltest.text = LabelText
         TextBill.text = TextBillAmount
         TextPeople.text = TextPeopleAmount
@@ -96,6 +114,7 @@ class secondViewController: UIViewController {
         DestViewController.textMyALa = myTotal.text!
         DestViewController.textSumOfTotalALa = totaltotal.text!
         DestViewController.textNumberOfSlider = labeltest.text!
+        
     }
     
     
