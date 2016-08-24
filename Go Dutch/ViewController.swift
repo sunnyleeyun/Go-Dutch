@@ -31,6 +31,69 @@ class ViewController: UIViewController {
     @IBOutlet weak var confirmButton: UIButton!
     
     
+    //segue from second view controller
+    @IBOutlet weak var name1: UILabel!
+    @IBOutlet weak var name2: UILabel!
+    @IBOutlet weak var name3: UILabel!
+    @IBOutlet weak var name4: UILabel!
+    @IBOutlet weak var name5: UILabel!
+    @IBOutlet weak var name6: UILabel!
+    @IBOutlet weak var name7: UILabel!
+    @IBOutlet weak var name8: UILabel!
+    @IBOutlet weak var name9: UILabel!
+    @IBOutlet weak var name10: UILabel!
+    var SName1 = String()
+    var SName2 = String()
+    var SName3 = String()
+    var SName4 = String()
+    var SName5 = String()
+    var SName6 = String()
+    var SName7 = String()
+    var SName8 = String()
+    var SName9 = String()
+    var SName10 = String()
+    @IBOutlet weak var money1: UILabel!
+    @IBOutlet weak var money2: UILabel!
+    @IBOutlet weak var money3: UILabel!
+    @IBOutlet weak var money4: UILabel!
+    @IBOutlet weak var money5: UILabel!
+    @IBOutlet weak var money6: UILabel!
+    @IBOutlet weak var money7: UILabel!
+    @IBOutlet weak var money8: UILabel!
+    @IBOutlet weak var money9: UILabel!
+    @IBOutlet weak var money10: UILabel!
+    var SMoney1 = String()
+    var SMoney2 = String()
+    var SMoney3 = String()
+    var SMoney4 = String()
+    var SMoney5 = String()
+    var SMoney6 = String()
+    var SMoney7 = String()
+    var SMoney8 = String()
+    var SMoney9 = String()
+    var SMoney10 = String()
+    @IBOutlet weak var number1: UILabel!
+    @IBOutlet weak var number2: UILabel!
+    @IBOutlet weak var number3: UILabel!
+    @IBOutlet weak var number4: UILabel!
+    @IBOutlet weak var number5: UILabel!
+    @IBOutlet weak var number6: UILabel!
+    @IBOutlet weak var number7: UILabel!
+    @IBOutlet weak var number8: UILabel!
+    @IBOutlet weak var number9: UILabel!
+    @IBOutlet weak var number10: UILabel!
+    var SNumber1 = String()
+    var SNumber2 = String()
+    var SNumber3 = String()
+    var SNumber4 = String()
+    var SNumber5 = String()
+    var SNumber6 = String()
+    var SNumber7 = String()
+    var SNumber8 = String()
+    var SNumber9 = String()
+    var SNumber10 = String()
+    
+    
     
     @IBOutlet weak var sumOfTotalALa: UITextField!
     var textSumOfTotalALa = String()
@@ -66,6 +129,42 @@ class ViewController: UIViewController {
         billAmountField.text = textBillAmount
         peopleAmountField.text = textPepopleAmount
         publicAmountField.text = textPublicAmount
+        
+        name1.text = SName1
+        name2.text = SName2
+        name3.text = SName3
+        name4.text = SName4
+        name5.text = SName5
+        name6.text = SName6
+        name7.text = SName7
+        name8.text = SName8
+        name9.text = SName9
+        name10.text = SName10
+        
+        money1.text = SMoney1
+        money2.text = SMoney2
+        money3.text = SMoney3
+        money4.text = SMoney4
+        money5.text = SMoney5
+        money6.text = SMoney6
+        money7.text = SMoney7
+        money8.text = SMoney8
+        money9.text = SMoney9
+        money10.text = SMoney10
+
+        
+        number1.text = SNumber1
+        number2.text = SNumber2
+        number3.text = SNumber3
+        number4.text = SNumber4
+        number5.text = SNumber5
+        number6.text = SNumber6
+        number7.text = SNumber7
+        number8.text = SNumber8
+        number9.text = SNumber9
+        number10.text = SNumber10
+        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,6 +179,40 @@ class ViewController: UIViewController {
         DestViewController.TextBillAmount = billAmountField.text!
         DestViewController.TextPeopleAmount = peopleAmountField.text!
         DestViewController.TextPublicAmount = publicAmountField.text!
+        
+        DestViewController.SName1 = name1.text!
+        DestViewController.SName2 = name2.text!
+        DestViewController.SName3 = name3.text!
+        DestViewController.SName4 = name4.text!
+        DestViewController.SName5 = name5.text!
+        DestViewController.SName6 = name6.text!
+        DestViewController.SName7 = name7.text!
+        DestViewController.SName8 = name8.text!
+        DestViewController.SName9 = name9.text!
+        DestViewController.SName10 = name10.text!
+        
+        DestViewController.SMoney1 = money1.text!
+        DestViewController.SMoney2 = money2.text!
+        DestViewController.SMoney3 = money3.text!
+        DestViewController.SMoney4 = money4.text!
+        DestViewController.SMoney5 = money5.text!
+        DestViewController.SMoney6 = money6.text!
+        DestViewController.SMoney7 = money7.text!
+        DestViewController.SMoney8 = money8.text!
+        DestViewController.SMoney9 = money9.text!
+        DestViewController.SMoney10 = money10.text!
+        
+        DestViewController.SNumber1 = number1.text!
+        DestViewController.SNumber2 = number2.text!
+        DestViewController.SNumber3 = number3.text!
+        DestViewController.SNumber4 = number4.text!
+        DestViewController.SNumber5 = number5.text!
+        DestViewController.SNumber6 = number6.text!
+        DestViewController.SNumber7 = number7.text!
+        DestViewController.SNumber8 = number8.text!
+        DestViewController.SNumber9 = number9.text!
+        DestViewController.SNumber10 = number10.text!
+        
     }
     
     
